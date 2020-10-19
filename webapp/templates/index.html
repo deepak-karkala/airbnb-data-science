@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Debunking the fear of rise of AI</title>
+	<meta name="description" content="Scrollama: Sticky Overlay Example">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link href="/vendor/bootstrap4.1.1/css/bootstrap.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <link href="/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/brands.min.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/solid.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+  <!--<link rel='stylesheet' href='/style/style.css'>-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar_style fixed-top" id="mainNav">
+    <a class="nav-link" href="../../../../index.html">Home</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        
+    </button>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../about/index.html">About this project</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../../../../index.html#projects_portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../../index.html#about_me">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../../index.html#contact_me">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<body>
+	<!-- Navigation -->
+    <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">-->
+    <!--
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="nav-link js-scroll-trigger" href="#page-top">HOME</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://deepak-karkala-portfolio.herokuapp.com/">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    -->
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-10 col-12 mx-auto">
+              <h1 class="brand-heading">Debunking the fear of rise of AI</h1>
+              <p class="intro-text text-center">An attempt to explain the underlying workings of today's AI systems and thereby reduce the fear and apprehension among public about the rise of AI.
+                <br></p>
+              <p class="article_author text-center">Deepak Karkala</p>
+              <p class="article_date text-center">June 2019</p>
+              <a href="#introduction" class="btn btn-circle js-scroll-trigger" style="color:white; border: 1px solid white; font-size: 26px;">
+                <i class="fa fa-angle-double-down animated"><span ></span></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+	<section class="description" id="introduction">
+		<div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<p>The story goes back to when a walking tour guide on my trip to Amsterdam asked me what do I do ? He was visibly unsettled when I replied 'I work on Machine Learning systems'. He went on to explain how the machine that defeats the best chess player today may one day go rogue like in numerous Hollywood flicks over the years. The term 'Artificial Intelligence' is one of those polarising ones and for a lot of people working on Machine Learning and AI, concerns over rise of AI is one of those topics that keeps coming up when interacting with people. 
+            </p>
+            <p>'Artificial Intelligence' - is the general term used to refer to a myriad of algorithms powering applications in widely different domains such as image recognition, language translation, voice recognition, game playing, preventive maintenance and so many more. While the term itself has become synonymous among public with some variant of super human intelligence of machines, the truth is quite far from it. In fact, most AI and machine learning practitioners would cringe at the use of the term 'Artificial Intelligence' for most of the above mentioned applications. Fueled by this gap of understanding and the depiction of doomsday scenarios in the pop culture over a number of decades, the vast population of general public view AI with fear and apprehension. This article is an attempt to address this gap by explaining the working of today's AI systems and how far we still are from building a truly general 'Artificial Intelligence' machine.
+            </p>
+            <p>Presented here is an intuitive explanation of how AI models work in various applications. The article also goes on to describe 'Artificial General Intelligence' (AGI) the type of which can attain human level intelligence in wide variety of tasks and explain what today's systems (often termed as 'narrow AI') lack in order to become 'General Intelligence'. Perhaps with the understanding of these concepts a lot more people would feel less startled about AI than my tour guide did a few months ago.
+            </p>
+          </div>
+        </div>
+      </div>
+	</section>
+
+	<div class="transition" id="transition1">Public perception Why fear in public ?</div>
+
+	<section class="description" id="ai_perception">
+		<div class="container">
+			<div class="row text-center">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+        	<p>
+			       Science fiction and pop culture have presented AI in myriad ways to the audience over the decades. While it is undeniable that these depictions have inspired many a inventions, the more important ramification of this has been in the way of shaping the public perception of AI. This has led to a far greater 
+          </p>
+          <p>
+			       The common theme in all these depictions has always remained the same. Associating self-awareness, human like consciousness to machines and the fact that through these characteristics the machines will rise and fight the human race eventually lording superior over the humans. While this makes for entertaining viewing, it also leaves a very lasting misleading perception on the audience. And since these themes have kept recurring over so many years, there is a strong consensus that with growing capabilities of AI, the doom's day scenario is inevitable. 
+          </p>
+        </div>
+      </div>
+			<div class="row img-block">
+	        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+	          	<img class="img-demo text-center" src="images/fig1a.png">
+	         </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <p>
+             The ubiquitous applications of AI over the last few years has naturally led to ever increasing coverage in media and news. In the era of clickbaits, it seems even the reputed magazines have followed the suit by having very dubious illustrations on cover pages. While the articles themselves depict an accurate picture of the current state of AI as you would expect from such reputed magazines, the cover page illustrations are often eye raising in order to catch people's attention.
+          </p>
+        </div>
+      </div>
+			<div class="row img-block">
+	        	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+	          		<img class="img-demo text-center" src="images/fig1b.png">
+	          </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <p>
+					   As a result of all these, the overall opinion of general public about AI is more of skeptical rather than the belief in the potential of numerous applications of AI. All this while the domain experts keep getting frustrated with widespread misuse of AI's potrayal to public. Explaining the underlying models and algorithms using math is certainly not an option. In this regard, this article is an attempt to explain intuitively the underlying workings of today's AI systems, present the current state of AI and in the process hopefully alleviate the growing fear among the people regarding the rise of AI. 
+          </p>
+        </div>
+      </div>
+    </div>
+	</section>
+
+	<div class="transition" id="transition2">AI in reality</div>
+
+	<section class="description" id="ai_reality">
+		<div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+            <h3>A Brief history of AI and its past hype cycles</h3>
+            <p>
+				      The field of Artificial Intelligence took birth during 1950s and since then it has had several ups and downs. The pattern seems to be similar everytime. A certain breakthrough creates a buzz in the research community prompting researchers to make some bold claims. This raises expectations leading to enormous funding. But quite often researchers fail to appreciate the difficulty of the problems they face and their tremendous optimism would already have raised expectations impossibly high, and when the promised results fails to materialize, funding for AI disappears eventually leading to a bust. 
+            </p>
+            <div class="row img-block">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+                <img class="img-demo text-center" src="images/cycles.jpg" alt="Rise and Fall of AI">
+              </div>
+            </div>
+            <!--<p class="figure_sub_text">https://en.wikipedia.org/wiki/History_of_artificial_intelligence</p>-->
+            <h3>Recent years: Why the buzz in recent past ?</h3>
+            <p>
+              AI has certainly been around for a long time with several peaks and troughs in its hype cycles over the past. But then something changed in 2010s, deep learning - a variant of machine learning which was previously discarded due to its enormous computational and data requirements found a new lease of life. Researchers lead mainly by pioneers of the technique found a way of achieving unprecedented levels of improvements in a diverse set of applications. While the underlying idea of these algorithms was not new but with remarkable improvements in computational resources and availability of huge data, the tech giants could leverage these results and apply them in a number of real world applications such as image understanding, translation, speech recognition, game playing, self-driving etc. 
+            </p>
+            <!--<h3>Deep Learning: What can AI do today ?</h3>-->
+            <div class="container current_applications">
+            <h4 class="text-center">What can AI do today?</h4>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-12">
+                <div class="row">
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Object detection</p>
+                    <img src="images/gif/object_detection.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Facial recognition</p>
+                    <img src="images/gif/facial_recognition.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Character recognition</p>
+                    <img src="images/gif/character_recognition.gif">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-12">
+                <div class="row">
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Language Translation</p>
+                    <img src="images/gif/translation.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Voice recognition</p>
+                    <img src="images/gif/voice_recognition.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Chatbots, Assistants</p>
+                    <img src="images/gif/chatbot.gif">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-12">
+                <div class="row">
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Playing Chess, Go</p>
+                    <img src="images/gif/alphago.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Autonomous driving</p>
+                    <img src="images/gif/self_driving.gif">
+                  </div>
+                  <div class="col-lg-4 col-4">
+                    <p class="application_name text-center">Game playing</p>
+                    <img src="images/gif/pong.gif">
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <h3>The Deep Learning Hype</h3>
+            <p>
+              All these has lead to an enormous hype around the capabilities of AI over the last few years. So that raises the question, is the current hype any different from those of the past. Will AI in this avatar finally reach its potential of exceeding human level intelligence as potrayed often in pop culture ? In order to understand this, we will need to answer couple of questions first,
+              <ol>
+                <li>What capabilities does a machine need to have in order to achieve super human intelligence (what is General Aritficial Intelligence) ? </li>
+                <li>How does today's Deep Learning systems work and what is limiting them from becoming General Artificial Intelligence ?</li>
+              </ol>
+            </p>
+            <h3>What is General AI ?</h3>
+            <p>
+              Artificial general intelligence (AGI) refers to intelligence of a machine that has the capacity to understand or learn any intellectual task that a human being can. It does not refer to human intelligence itself, but it can be like human thinking, may exceed human intelligence and is thereby the primary goal of most research in artificial intelligence. This form of AI is often the one portrayed in science fiction and pop culture. Although there are no specific criteria about the capabilities of such a machine, broadly AGI systems should be able to perform the following tasks,
+            </p>
+            <div class="row img-block">
+              <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+                <img class="img-demo text-center" src="images/agi.jpg" alt="AGI Capabilities">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+
+	<div class="transition" id="transition3">What is limiting today’s AI from becoming General AI ?</div>
+
+	<section class="description" id="ai_today_capabilities">
+	  <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<h3>Reality: We are still quite far from General AI</h3>
+            <p>
+              Most of today's AI systems are based on the technique of <em>Deep Learning</em> which is a part of larger group of techniques known as <em>Machine Learning</em> which in turn are one small part of Artificial Intelligence. In contrast to the Artificial General Intelligence, today's systems are trained to perform well on one dedicated task. Such systems do not possess any innate knowledge base, common-sense or higher level knowledge and this leads to shortcomings such as systems not being able to use reasoning or build a heirarchy of concepts. While this thought of deep learning not being the ultimate answer and the route to General AI has been around for few years, it is only in the recent past that it is becoming increasingly clear with even its GodFathers sharing such concerns and thoughts over how to overcome this challenge.
+            </p>
+          </div>
+        </div>
+
+        <div class="row img-block">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-8 mx-auto">
+            <img class="img-demo text-center" src="images/dl_part_ai.jpg" alt="Deep Learning part of AI">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<h3>How today's AI works ?</h3>
+          	<p>
+				      As Andrew Ng explains it <a href="https://hbr.org/2016/11/what-artificial-intelligence-can-and-cant-do-right-now">here</a>, most of today's AI systems work by transforming input <em>A</em> in some form to a corresponding output <em>B</em>. This has transformed many industries. Deep learning can be thought of as the mapping between the inputs and the outputs that the system learns with training. And in principle, such systems are capable of representing any finite deterministic mapping between any given sets of inputs and corresponding outputs.
+            </p>
+            <p>
+              However as we shall see in the following sections, in practice there are a number of constraints and limitations under which deep learning systems can learn that mapping. 
+            </p>
+          </div>
+        </div>
+
+        <!--
+        <div class="row text-center">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<h3>Understanding images</h3>
+          </div>
+        </div>
+        -->
+
+        <div class="row img-block">
+          <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto">
+              <!--<h5 class="text-center">Understanding Images: Capabilities</h5>-->
+              <img class="img-demo text-center" src="images/fig5.png">
+            </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<p>
+				      Given an image input, the current system can identify objects, people, recognise text in documents, separate foreground and background for shallow depth of field effect in photos etc. In order to achieve these feats, such systems are trained with millions of accurately labeled images. The pixels in the image serve as the input and the labels (object or person name) are the outputs and the network learns the mapping between inputs and outpus during training and when presented with a new test image will respond with the most likely output.
+            </p>
+          </div>
+        </div>
+
+        <div class="row img-block">
+          <div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto">
+              <!--<h5 class="text-center">Understanding Images: How it works ?</h5>-->
+              <img class="img-demo" src="images/fig6.png">
+          </div>
+        </div>
+
+        <div class="row img-block">
+          	<div class="col-lg-6 col-md-10 col-sm-12 col-12 mx-auto">
+	        	  <!--<h5 class="text-center">Understanding Images: How is it different from humans ?</h5>-->
+          		<img class="img-demo" src="images/fig7.png">
+          	</div>
+        </div>
+
+        <div class="row">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          		<p>
+				        Humans in contrast learn to identify new objects not by relying on millions of images but instead based on the ability to form abstract relationships and through reasoning using both explicit definitions and implicit understanding of real world. For example, a baby can infer that it is a cat by identifying the presence of face, body, tail and then by reasoning based on unique cat features such as covered in fur, makes "meow" sound, has whiskers etc.
+            	</p>
+          	</div>
+        </div>
+
+
+        <div class="row img-block">
+        	<div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
+	        	  <!--<h5 class="text-center">Understanding Images: Humans vs AI</h5>-->
+          		<img class="img-demo" src="images/fig8.png">
+          	</div>
+        </div>
+        <div class="row">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          		<p>
+				        Contrasting the two approaches, it is clear that as long as the picture of cat in the image is clear, typical and similar to millions of training images, the current AI system will be able to accurately identify the cat. However if the image offers a new previously unseen viewpoint of a cat, or if the cat is occluded behind another object, it is almost certain that the accuracy of the AI system will drop. Even though it may still be identified as a cat, the system will no longer be certain of it. While this may not sound critical for our trivial cat example, such limitations may lead to catastrophic outcome in applications such as medical diagnosis or self-driving. Humans on the other hand will still be able to logically conclude that it is a cat even when occluded or when seen from a new viewpoint.
+            	</p>
+          	</div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+            <h3>Understanding Language</h3>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<p>
+				      In terms of understanding language, current AI systems can translate sentences from one language to another, understand speech and respond with replies to user queries. Thanks to deep learning, there has been a significant improvement in such applications over the last few years. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row img-block">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+	        	<h5 class="text-center">Language understanding: Capabilities</h5>
+          		<div class="row">
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Language Translation</p>
+                    <img class="gif-demo" src="images/gif/translation.gif">
+                  </div>
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Character recognition</p>
+                    <img class="gif-demo" src="images/gif/character_recognition.gif">
+                  </div>
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Speech recognition</p>
+                    <img class="gif-demo" src="images/gif/voice_recognition.gif">
+                  </div>
+		          </div>
+		        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <h3>Understanding Language: How it works ?</h3>
+              <p>
+                Dedicated AI systems are trained to each application such as translation, speech recognition and chatbots. Each of these systems are trained on millions of inputs and output training samples. For example, in order to train a network which can translate English sentences to Spanish, the network is fed with millions of English sentences with the corresponding Spanish sentences as expected output. The AI network uses these examples to learn the mapping between English and Spanish sentences. Once the training is complete, when a new English sentence is fed to the system, it will respond with the corresponding translated Spanish sentence. Similarly for chatbots the network input and output will be user query and bot reply respectively. And for speech recognition systems, speech samples and the corresponding sentence will serve as input and output respectively for the network to learn the mappings.
+              </p>
+            </div>
+        </div>
+
+        <div class="row img-block">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+            <img class="img-demo" src="images/fig10.png">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <h3>Understanding Language: How is it different from humans ?</h3>
+              <p>
+                Despite such impressive feats, today's AI systems still have a long way to go in truly understanding language and respond to open ended queries. This is because human languages are inherently complex, ambiguous and relies heavily on lot of implicit defintions, prior knowledge, context and an innate understanding of the world. We learn our languages by beginning with alphabets, grammar, sentence composition and then using common sense, prior knowledge, working model of real world we are able to comprehend and understand each other. As we have already seen, this is very different from how a AI system is trained to understand language related tasks. And these differences lead to several limitations in today's language AI systems. 
+              </p>
+            </div>
+        </div>
+
+        <div class="row img-block">
+          <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
+            <img class="img-demo" src="images/fig11.png">
+          </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <p>
+                Clearly understanding a language is open-ended and cannot be represented as finite ended catergorisation problem which an AI system can master by learning the finite mappings between inputs and outputs. For example, today's AI systems can answer queries for which the answer is explicitly contained in the text but fail to do so when the answer requires being able to understand implicit information, comprehending multiple sentences, using background information and drawing open ended inferences. As one of the Godfathers of Deep Learning Yoshua Bengio explains it <a href="https://www.nature.com/articles/d41586-019-00505-2">here</a>, current AI systems cannot discover such high-level representations whereas even babies can use such high-level concepts to generalise in powerful ways.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+            <h3>Understanding Game Playing</h3>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<p>
+				      Game playing has often be portrayed as one of the key challenges for AI. In 2013, DeepMind a London startup published a seminal paper which described the use of Deep Learning for Game playing with remarkable improvements over the previous results. This technique known as "Reinforcement learning" when combined with Deep Learning has given many dramatic capabilities to AI including defeating champion player in the game of <em>Go</em>, several joystick based games and self-driving systems. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row img-block">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+  	        	<h5 class="text-center">Game Playing: Capabilities</h5>
+            		<div class="row">
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Playing Games</p>
+                    <img class="gif-demo" src="images/gif/pong.gif">
+                  </div>
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Playing Chess, Go</p>
+                    <img class="gif-demo" src="images/gif/alphago.gif">
+                  </div>
+                  <div class="col-lg-4 col-4 mx-auto">
+                    <p class="application_name text-center">Autonomous driving</p>
+                    <img class="gif-demo" src="images/gif/self_driving.gif">
+                  </div>
+  		        </div>
+		        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <h3>Game Playing: How it works ?</h3>
+              <p>
+                For a long time, game playing abilities of machines were based on logic, cleverly formulaised strategies etc. Deep learning on the other hand offers a completely new solution by using a network to learn the mappings between input pixels and output game controls. This is often referred to as end-to-end solution since the network learns to play a game not based on any explicit pre-programmed logic but instead based on millions of previously seen similar game positions. For example, in order to teach a self-driving AI  system, the network is fed with millions and millions of images as seen from the driver's position inside the car. The output of such systems will be to handle various controls such as accelerating, braking, turning left, right etc based on the pixels present in input image. During training, the system will be appropriately punished or rewarded based on the correctness of the output produced. As the training progresses, the network performs fewer and fewer mistakes. The trained system will then be used in real world practical scenarios where the machine will handle the various controls based on what it sees in the input.
+              </p>
+              <p>
+                Similarly the AI system that plays chess can do so by learning the best moves when given previously played game positions and then by further playing millions of games against itself. 
+              </p>
+            </div>
+        </div>
+
+        <div class="row img-block">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <img class="img-demo" src="images/fig14.png">
+          </div>
+        </div>
+
+        <!--
+        <div class="row img-block">
+            <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+              <h5 class="text-center">Understanding self-driving: How is it different from humans ?</h5>
+            </div>
+        </div>
+        -->
+
+        <div class="row img-block">
+            <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
+              <img class="img-demo" src="images/fig15.png">
+            </div>
+        </div>
+
+        <div class="row">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          		<p>
+				        Like with image and language understanding, the way we learn to drive cars is fundamentally different from the way a self-driving AI systems are trained. We begin with the prior knowledge of road signs, abstract model of real world, common sense (avoid trees, curbs, traffic lights do not move etc) and more importantly we use our ability to reason and respond based on the things we see while we drive. The inherent limitation with training a self-driving system with millions of scenarios is that the system may not be able to respond well when encountered with a relatively new previously unseen scenario on the road. Taking this limitation to an extreme, it is a common joke amongst researchers about how the ultimate challenge for a self-driving system is to navigate the boundless challenges on an Indian city street. Current systems trained with assumptions such as well marked lanes on all streets, people following lane system, no animals on the street will clearly not do well when such assumptions no longer hold. 
+            	</p>
+          	</div>
+        </div>
+        
+        
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+            <h3>AI today: What it can and can't do ?</h3>
+          </div>
+        </div>        
+
+
+        <div class="row text-center">
+          <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          	<p>
+				      As we have seen so far, there is a common thread in the strengths and limitations of the current AI systems irrespective of the vastly different applications they are deployed in. Such systems are excellent at finding an optimum mapping between inputs and outputs when trained with sufficiently large data set and when tested with scenarios which are similar to previously encountered training data. Over the past decade, this very technique has resulted in tremendous improvement in applications such as object detection, speech recognition, voice assistants, autonomous driving, game playing etc. 
+            </p>
+          </div>
+        </div>
+
+
+        <div class="row img-block">
+          <div class="col-lg-6 col-md-10 col-sm-10 col-12 mx-auto">
+          		<img class="img-demo text-center" src="images/fig17.png" alt="fig17">
+          </div>
+        </div>
+
+
+        <div class="row">
+          	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          		<p>
+				        However based on our knowledge of the capabilities of a General Artificial Intelligence (AGI), we also know the limitations of today's AI despite all the recent advances. In general, they all share similar drawbacks such as requiring huge datasets to train, test scenario should not be very different from data used to train the system, limited interpretability of results leading to concerns over reliability and biases. And most importantly, it is not easy to integrate prior knowledge to such systems, make them aware of common sense or working model of real world, as a result of which they fail to deal with high-level representations, hierarchial structures and open-ended inferences. Knowing that these are the key requirements of an AGI system, unless such limitations are addressed we can safely claim that today's AI systems are still quite far from turning into AGI and being able to exceed human level intelligence.
+            	</p>
+          	</div>
+        </div>
+
+      </div>
+	</section>
+
+
+
+	<div class="transition" id="transition4">The years ahead...</div>
+
+
+	<section class="description" id="ai_future">
+		<div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <p>
+            The field of AI has seen many hype cycles and has had its ups and downs over the past several decades. The current cycle of AI is dominated by Deep Learning. Driven by rapid rise in computation power and availability of huge datasets, Deep learning has delivered spectacular results over the past decade but like most things it is now approaching the point of diminishing returns. The improvement in results over the last two years have been marginal and the search for new techniques or changes to existing methodology is gathering more and more attention. But unlike the past cycles of AI, the current cycle has also bought unprecedented levels of both optimism and a fear of the rise of AI. Leveraging the huge data, the tech giants have deployed the deep learning systems in a myriad of applications leading to doubt over their dominance and influence over the society. There have also been growing apprehensions about the misuse of AI for military applications.
+          </p>
+          <p>
+            In light of all this, domain experts in industry and academia have widely different expectations of where AI is heading in the near future. While few are extremely pesimisstic about the potential hazardous future applications of AI, a vast majority believe that unless there is a breakthrough today's AI systems cannot be scaled to match human level intelligence anytime soon. And then there are also others who believe that rise of AI and its threat to humanity is inevitable. So in order to make sense of all these vastly contrasting opinions, here is a two dimensional graph with the axes representing the promising and dangerous scale of AI as seen by industry and academia experts.  
+          </p>
+          <p>
+            I call it the <em>Promising-Dangerous Scale</em>, this is a completely non-scientific exercise, with the numbers assigned to experts based solely on their opinions and the scores are not analytical in anyway. But what the graph does represent is where the experts stand in terms of the potential promises and threats of AI going forward. To read the graph is simple, a person placed further to the right on the horizontal scale believes that AI is more dangerous and likewise a person placed further at the top of the vertical scale believes that the future applications of AI will be very promising. 
+          </p>
+       	</div>
+     	</div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <h3>The Promising-Dangerous Scale</h3>
+        </div>
+      </div>
+
+      <div class="row img-block">
+        <div class="col-lg-8 col-12 mx-auto expert_views" id="expert_views">
+        </div>
+      </div>
+	        
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <h3>Winter is coming ?</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+        		<p>
+              In a early 2018 blog titled <a href="https://blog.piekniewski.info/2018/05/28/ai-winter-is-well-on-its-way/">AI Winter Is well on Its Way</a>, author Flip Pieknniewski compares the inevitability of AI winters with those of stock market crashes, although hard to say when but bound to occur at some point of time. We are currently going through similar phases like with past AI hype cycles, where the expectations are raised but not met, the disappointment will lead to people discard it and chase the next big thing. But the author also makes a valid point of how unlike in the past, this cycle of AI has been fueled by tech giants with deep pockets, so the winter will not freeze and kill the entire field.
+          	</p>
+
+            <p>
+              The slowdown has been gradual over the last couple of years but when even the Godfathers of current AI revolution express concerns, we know it is for real. For instance, in an <a href="https://www.axios.com/artificial-intelligence-pioneer-says-we-need-to-start-over-1513305524-f619efbd-9db0-4947-a9b2-7a4c310a28fe.html">interview</a> for Axios, Geoffrey Hinton, a professor emeritus at the University of Toronto a Google researcher and one of the GodFathers of Deep Learning, said he is now <em>deeply suspicious of back-propagation, the workhorse method that underlies most of the advances we are seeing in the AI field today</em>. Another Godfather, Yoshua Bengio expressed similar concerns in this MIT Technology review <a href="https://www.technologyreview.com/s/612434/one-of-the-fathers-of-ai-is-worried-about-its-future/">interview</a>, <em>I think we need to consider the hard challenges of AI and not be satisfied with short-term, incremental advances. I’m not saying I want to forget deep learning. On the contrary, I want to build on it. But we need to be able to extend it to do things like reasoning, learning causality, and exploring the world in order to learn and acquire information</em>. Popular tech magazine Wired published an article that was entitled <a href="https://www.wired.com/story/self-driving-cars-challenges/">After peak hype, self-driving cars enter the trough of disillusionment</a>, describing how the autonomous driving systems have failed to live up to the expectations.
+            </p>
+            <p>
+              Through this article, we learnt what today's AI lacks and how it is still quite far from General AI. The immediate next question is <em>Will we be able to achieve AGI ?</em>, <em>If so when will that be ?</em>, <em>What are the possible future scenarios and what does the future hold ?</em>. In order to answer these, I made a chart with timeline of likely future possibilities. Again the scenarios presented are completely hypothetical and based on a number of expert views, past events and the present situtation of AI research.
+            </p>
+        	</div>
+      </div>
+	        
+      <!--
+      <div class="row img-block">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <h5 class="text-center">Timeline of likely future possibilities</h5>
+        </div>
+      </div>
+      -->
+
+      <div class="row img-block">
+      	<div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+        	<img class="img-demo text-center" src="images/fig19.jpeg" alt="fig19">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+        	<p>
+            The horizontal axis denotes the timeline and the vertical axis shows the intelligence levels of AI. We are currently at a point of time when Deep Learning has delivered stunning results over last few years and is now at the point of diminishing returns. In the first possible future scenario, the current methodology may hit a roadblock and our AI systems may end up getting limited to capabilities of today's Deep Learning techniques. In the second likely scenario, researchers may find a way of advancing the field of Deep Learning further, improving the results and getting further closer to General AI. In the third likely scenario, following the roadblock of Deep Learning, researchers may come up with an entirely new methodology addressed to overcome shortcomings of today's AI systems and eventually getting much closer to the capabilities of General AI.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+          <p>
+            So which scenario will it be ? We will never know, only time will reveal that. Perhaps this was best summarised by Geoffrey Hinton, widely regarded as spearheading the current AI revolution when he used a Max Planck quote in <a href="https://www.axios.com/artificial-intelligence-pioneer-says-we-need-to-start-over-1513305524-f619efbd-9db0-4947-a9b2-7a4c310a28fe.html">this interview</a>, <em>"Science progresses one funeral at a time.' The future depends on some graduate student who is deeply suspicious of everything I have said"</em>. But what we do know is that the current AI systems still lack some of the fundamental requirements in order to achieve or exceed human level intelligence. So we all including my Amsterdam tour guide can relax and not worry about the doomsday scenario and machines overlording over humans. We are not there, just yet.
+          </p>
+        </div>
+      </div>
+    
+    </div>
+	</section>
+
+      <!-- Footer -->
+    <footer class="footer" name="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-12 mx-auto">
+            <h6 class="text-center" style="padding-top:8vh;">For all queries, contact <a href="https://twitter.com/deepak_karkala">@deepak_karkala</a>. You can also send me an email at <a href="mailto:dkarkala01@gmail.com" target="_top"><span class="contact_link">dkarkala01@gmail.com</span></a></h6>
+            <p class="text-center">Copyright &copy; Deepak Karkala 2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!--
+-->
+	
+	<!-- <div class='debug'></div> -->
+	<!--<script src='https://unpkg.com/d3@5.9.1/dist/d3.min.js'></script>
+	<script src='https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js'></script>-->
+  <!--
+	<script src="https://d3js.org/d3-color.v1.min.js"></script>
+	<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  -->
+  <script src="vendor/d3.v4.min.js"></script>
+
+	<!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery3.3.1/jquery.min.js"></script>
+  <script src="vendor/bootstrap4.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing1.4.1/jquery.easing.min.js"></script>
+
+	<script src='scripts/stickyfill.min.js'></script>
+	<script src='scripts/scrollama.min.js'></script>
+
+  <script src="scripts/grayscale.js"></script>
+	<!--<script src='scripts/script1.js'></script>-->
+  <script src="scripts/draw_expert_views.js"></script>
+
+</body>
+
+</html>

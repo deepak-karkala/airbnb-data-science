@@ -1,0 +1,209 @@
+body {
+  /*
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  */
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 1280px;
+  color: black; /*#3b3b3b;*/
+}
+
+
+#mainNav {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  color: white;
+  border: 1px solid white;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav a:hover {
+  color: #007fff;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: black;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    border-bottom: none;
+    background: black;
+  }
+  #mainNav.navbar-shrink {
+    background: black;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #mainNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+.masthead {
+  display: table;
+  height: 100vh;
+  width: 100%;
+  /*
+  height: auto;
+  padding: 200px;
+  */
+  text-align: center;
+  color: black;
+  background: url("background.jpg") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: screen;
+  margin-bottom: 0px;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.masthead .intro-body .brand-heading {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  color: black; /*#FF5A60;*/
+  font-weight: bolder;
+  /*text-shadow: 3px 5px #000000;*/
+}
+
+.masthead .intro-body .intro-text {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black; /*#DC143C;*/
+  font-weight: bold;
+  /*text-shadow: 1px 1px #000;*/
+}
+
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100vh; /*150%;*/
+    padding: 0;
+    padding-top: 0vh;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 1.5rem;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media (max-width: 350px) {
+  .masthead {
+    height: 100vh; /*100%;*/
+    padding: 0;
+    padding-top: 10px;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 2rem;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 1.25rem;
+  }
+  .article_author, {
+    color: #F27200;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
+  .article_date {
+    color: #F27200;
+    padding-bottom: 0;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  li {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+  }
+
+
+  h3, h5 {
+    font-size: 1.25rem;
+  }
+
+  .navbar a {
+    font-size: 0.75rem;
+    padding: 2px;
+    font-weight: normal;
+  }
+  .navbar-toggler {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+  }
+  .fas {
+    font-size: 0.75rem;
+  }
+  .transition {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+.listing_form {
+	background-color: white;
+}
+
+p {
+	color: black;
+}
+
+.select2_select {
+  width: 15vw;
+  margin-bottom: 20px;
+}
