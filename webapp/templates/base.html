@@ -16,6 +16,21 @@
     $(document).ready(function() {
         $('#combobox_neighbourhood').select2();
     });
+    $(document).ready(function() {
+        $('#combobox_propertytype').select2();
+    });
+    $(document).ready(function() {
+        $('#combobox_roomtype').select2();
+    });
+    $(document).ready(function() {
+        $('#combobox_bedtype').select2();
+    });
+    $(document).ready(function() {
+        $('#combobox_cancellationpolicy').select2();
+    });
+    $(document).ready(function() {
+        $('#combobox_hostresponsetime').select2();
+    });
 </script>
 
 <!--
@@ -44,7 +59,7 @@
 
 <nav class="navbar navbar-expand-lg navbar_style fixed-top" id="mainNav">
     <a class="nav-link" href="http://deepakkarkala.com/">Home</a>
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" id="Toggle navigation">
           <i class="fas fa-bars"></i>
         
     </button>
@@ -87,34 +102,32 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
                 <p class="intro-text text-center">
-                  Enter details of your listing and the Machine Learning Model will suggest the best price based on location, size, amenities etc.
+                  Enter details of your listing and the Machine Learning Model will suggest the best price based on location, size, amenities, reviews etc.
                 </p>
               </div>
             </div>
 
-            <div class="row">
+            <!-- Location -->
+            <div class="row listing_form_row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
 
                 <div class="control-group">
                   Location: 
                   <select id="combobox_country" class="select2_select">
                     <option value="">Country</option>
-                    <option value="">Arai</option>
                   </select> 
                   <select id="combobox_city" class="select2_select">
                     <option value="">City</option>
-                    <option value="">Arai</option>
                   </select> 
                   <select id="combobox_neighbourhood" class="select2_select">
                     <option value="">Neighbourhood</option>
-                    <option value="">Arai</option>
                   </select> 
                 </div> 
                     
                 <!--
                 <div class="btn-group">
                   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</button>
-                  <div class="dropdown-menu" aria-labelledby="dropdown_loc_country">
+                  <div class="dropdown-menu" idledby="dropdown_loc_country">
                     <button class="dropdown-item" type="button">Action</button>
                     <button class="dropdown-item" type="button">Another action</button>
                     <button class="dropdown-item" type="button">Something else here</button>
@@ -124,15 +137,151 @@
 
               </div>
             </div>
-            
 
 
-            <p>
-              The story goes back to when a walking tour guide on my trip to Amsterdam asked me what do I do ? He was visibly unsettled when I replied 'I work on Machine Learning systems'. He went on to explain how the machine that defeats the best chess player today may one day go rogue like in numerous Hollywood flicks over the years. The term 'Artificial Intelligence' is one of those polarising ones and for a lot of people working on Machine Learning and AI, concerns over rise of AI is one of those topics that keeps coming up when interacting with people. 
-            </p>
+            <!-- Listing -->
+            <div class="row listing_form_row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+
+                <div class="control-group">
+                  Listing: 
+                  <select id="combobox_propertytype" class="select2_select">
+                    <option value="">Property Type</option>
+                  </select> 
+                  <select id="combobox_roomtype" class="select2_select">
+                    <option value="">Room Type</option>
+                  </select> 
+                  <select id="combobox_bedtype" class="select2_select">
+                    <option value="">Bed Type</option>
+                  </select> 
+                </div> 
+
+              </div>
+            </div>
+
+
+            <!-- Misc -->
+            <div class="row listing_form_row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+
+                <div class="control-group">
+                  <select id="combobox_cancellationpolicy" class="select2_select">
+                    <option value="">Cancellation Policy</option>
+                  </select> 
+                  <select id="combobox_hostresponsetime" class="select2_select">
+                    <option value="">Host Response Time</option>
+                  </select> 
+                </div> 
+
+              </div>
+            </div>
 
 
 
+            <div class="row listing_form_row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-lg-4 col-4">
+                        Accommodates: <input size="3" type="text" placeholder="2" id="accommodates">
+                    </div>
+                    <div class="col-lg-4 col-4">
+                        Bedrooms: <input size="3" type="text" placeholder="1" id="num_bedrooms">
+                    </div>
+                    <div class="col-lg-4 col-4">
+                        Beds: <input size="3" type="text" placeholder="1" id="num_beds">
+                    </div>
+                </div>
+              </div>
+            </div>
+
+<!--            
+"Minimum Nights", "Availability 30", "Availability 60", "Availability 90", "Availability 365"
+# "Number of Reviews", 
+# Review Scores Rating(20-100)
+# "Host Since" (num_days = current_date - host_since_date), Host Response Rate(0-100),"Calculated host listings count"
+
+Accommodates(1-16), "Bedrooms"(0-10), "Beds"(0-16)
+# "Review Scores Accuracy(2-10)", "Review Scores Cleanliness(2-10)","Review Scores Checkin(2-10)", "Review Scores Communication(2-10)", "Review Scores Location(2-10)","Review Scores Value(2-10)"
+
+"Bed Type", "Cancellation Policy"
+# "Host Response Time"
+-->
+
+            <!-- Availability -->
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  Min nights: <input size="3" type="text" placeholder="1" id="min_nights">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Availability 30: <input size="3" type="text" placeholder="15" id="availability_30">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Availability 365: <input size="3" type="text" placeholder="150" id="availability_365">
+              </div>
+            </div>
+
+
+            <!-- Reviews -->
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  Number of reviews: <input size="3" type="text" placeholder="50" id="num_reviews">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Review Score: <input size="6" type="text" placeholder="20-100" id="review_scores_rating">
+              </div>
+            </div>
+
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  Accuracy Score: <input size="6" type="text" placeholder="2-10" id="review_scores_accuracy">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Cleanliness Score: <input size="6" type="text" placeholder="2-10" id="review_scores_cleanliness">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Checkin Score: <input size="6" type="text" placeholder="2-10" id="review_scores_checkin">
+              </div>
+            </div>
+
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  Interaction Score: <input size="6" type="text" placeholder="2-10" id="review_scores_communication">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Location Score: <input size="6" type="text" placeholder="2-10" id="review_scores_location">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Value Score: <input size="6" type="text" placeholder="2-10" id="review_scores_value">
+              </div>
+            </div>
+
+
+
+            <!-- Host -->
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  Host Since: <input size="8" type="text" placeholder="100 days" id="host_since">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Response Rate: <input size="6" type="text" placeholder="0-100" id="host_response_rate">
+              </div>
+              <div class="col-lg-4 col-4">
+                  Num listings: <input size="6" type="text" placeholder="1" id="host_num_listings">
+              </div>
+            </div>
+
+
+            <div class="row listing_form_row text-center">
+              <div class="col-lg-4 col-4 mx-auto">
+                <input class="btn btn-primary" type="submit" value="Submit">
+              </div>
+            </div>
+
+            <div class="row listing_form_row listing_form_bottom_row model_output_row">
+              <div class="col-lg-12 col-12 mx-auto">
+                Suggested price per night: USD 
+              </div>
+            </div>
 
           </div>
         </div>
@@ -144,6 +293,8 @@
 </header>
 
 
+<script src="{{url_for('.static', filename='d3.v4.min.js')}}"></script>
+<script src="{{url_for('.static', filename='set_dropdown_options.js')}}"></script>
 
 
 

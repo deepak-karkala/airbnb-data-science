@@ -1,0 +1,1739 @@
+id,Neighbourhood Cleansed
+0,Watergraafsmeer
+1,Gaasperdam - Driemond
+2,Westerpark
+3,Centrum-West
+4,Centrum-Oost
+5,Oud-Oost
+6,Noord-West
+7,Oud-Noord
+8,Bijlmer-Centrum
+9,De Pijp - Rivierenbuurt
+10,Rixdorf
+11,Halensee
+12,Karl-Marx-Allee-Süd
+13,Sant Antoni
+14,el Poble Sec
+15,la Sagrada Família
+16,la Marina de Port
+17,el Clot
+18,la Font de la Guatlla
+19,Hostafrancs
+20,la Bordeta
+21,Sants - Badal
+22,Sant Gervasi - Galvany
+23,la Salut
+24,Sant Gervasi - la Bonanova
+25,la Vila Olímpica del Poblenou
+26,el Putxet i el Farró
+27,el Coll
+28,Vallcarca i els Penitents
+29,el Raval
+30,De Baarsjes - Oud-West
+31,Bijlmer-Oost
+32,Noord-Oost
+33,Oostelijk Havengebied - Indische Buurt
+34,IJburg - Zeeburgereiland
+35,Blankenfelde/Niederschönhausen
+36,Helmholtzplatz
+37,Wiesbadener Straße
+38,Nord 1
+39,Frankfurter Allee Nord
+40,el Camp de l'Arpa del Clot
+41,Diagonal Mar i el Front Marítim del Poblenou
+42,el Besòs i el Maresme
+43,Provençals del Poblenou
+44,el Poblenou
+45,Horta
+46,les Roquetes
+47,la Prosperitat
+48,Sant Andreu
+49,la Sagrera
+50,Navas
+51,el Guinardó
+52,el Carmel
+53,Porta
+54,el Turó de la Peira
+55,Alexanderplatz
+56,Brunnenstr. Süd
+57,nördliche Luisenstadt
+58,Moabit Ost
+59,Parkviertel
+60,Tempelhofer Vorstadt
+61,Südliche Friedrichstadt
+62,Weißensee
+63,Mierendorffplatz
+64,Pankow Zentrum
+65,Pankow Süd
+66,südliche Luisenstadt
+67,Karl-Marx-Allee-Nord
+68,Prenzlauer Berg Süd
+69,Heerstrasse
+70,Schloß Charlottenburg
+71,Volkspark Wilmersdorf
+72,Schloßstr.
+73,Albrechtstr.
+74,Teltower Damm
+75,Drakestr.
+76,Lichtenrade
+77,Zehlendorf  Nord
+78,Friedenau
+79,Neue Kantstraße
+80,Düsseldorfer Straße
+81,ΠΑΓΚΡΑΤΙ
+82,ΠΑΤΗΣΙΑ
+83,ΠΕΔΙΟ ΑΡΕΩΣ
+84,ΠΕΤΡΑΛΩΝΑ
+85,ΠΛΑΤΕΙΑ ΑΤΤΙΚΗΣ
+86,ΡΙΖΟΥΠΟΛΗ
+87,ΜΟΥΣΕΙΟ-ΕΞΑΡΧΕΙΑ-ΝΕΑΠΟΛΗ
+88,ΝΕΟΣ ΚΟΣΜΟΣ
+89,ΚΥΨΕΛΗ
+90,ΛΥΚΑΒΗΤΤΟΣ
+91,Zuid
+92,Buitenveldert - Zuidas
+93,ΚΟΛΩΝΑΚΙ
+94,ΚΟΛΩΝΟΣ
+95,ΚΟΥΚΑΚΙ-ΜΑΚΡΥΓΙΑΝΝΗ
+96,Haringrode
+97,Brederode
+98,Centraal Station
+99,Harmonie
+100,Eilandje
+101,Kiel
+102,Stadspark
+103,Universiteitsbuurt
+104,Geuzenveld - Slotermeer
+105,Slotervaart
+106,Osdorp
+107,De Aker - Nieuw Sloten
+108,Bos en Lommer
+109,ΑΓΙΟΣ ΕΛΕΥΘΕΡΙΟΣ
+110,ΑΓΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ-ΠΛΑΤΕΙΑ ΒΑΘΗΣ
+111,ΑΚΑΔΗΜΙΑ ΠΛΑΤΩΝΟΣ
+112,ΑΚΡΟΠΟΛΗ
+113,ΑΜΠΕΛΟΚΗΠΟΙ
+114,ΑΝΩ ΚΥΨΕΛΗ
+115,ΑΝΩ ΠΑΤΗΣΙΑ
+116,ΒΟΤΑΝΙΚΟΣ
+117,ΓΚΑΖΙ
+118,Oud - Berchem
+119,Borgerhout Intra Muros Zuid
+120,Zurenborg
+121,ΕΜΠΟΡΙΚΟ ΤΡΙΓΩΝΟ-ΠΛΑΚΑ
+122,ΘΗΣΕΙΟ
+123,ΓΟΥΒΑ
+124,ΓΟΥΔΙ
+125,ΕΛΛΗΝΟΡΩΣΩΝ
+126,ΝΙΡΒΑΝΑ
+127,Theaterbuurt-Meir
+128,Historisch Centrum
+129,ΙΛΙΣΙΑ
+130,ΚΕΡΑΜΕΙΚΟΣ
+131,ΣΤΑΔΙΟ
+132,West 4
+133,Blankenburg/Heinersdorf/Märchenland
+134,Prenzlauer Berg Nordwest
+135,Prenzlauer Berg Nord
+136,Charlottenburg Nord
+137,Buchholz
+138,Prenzlauer Berg Ost
+139,Prenzlauer Berg Südwest
+140,Reuterstraße
+141,Neuköllner Mitte/Zentrum
+142,Köllnische Heide
+143,Köpenick-Süd
+144,Sant Martí de Provençals
+145,la Verneda i la Pau
+146,"Sant Pere, Santa Caterina i la Ribera"
+147,el Fort Pienc
+148,les Corts
+149,la Maternitat i Sant Ramon
+150,el Baix Guinardó
+151,Pedralbes
+152,Sarrià
+153,el Parc i la Llacuna del Poblenou
+154,les Tres Torres
+155,la Vila de Gràcia
+156,Moabit West
+157,Sants
+158,la Teixonera
+159,Sant Genís dels Agudells
+160,Vilapicina i la Torre Llobeta
+161,el Camp d'en Grassot i Gràcia Nova
+162,Can Baró
+163,Wedding Zentrum
+164,el Barri Gòtic
+165,la Dreta de l'Eixample
+166,l'Antiga Esquerra de l'Eixample
+167,la Nova Esquerra de l'Eixample
+168,la Barceloneta
+169,Etterbeek
+170,Evere
+171,Forest
+172,Ganshoren
+173,Saint-Gilles
+174,Anderlecht
+175,Auderghem
+176,Bruxelles
+177,Ixelles
+178,Jette
+179,Koekelberg
+180,Molenbeek-Saint-Jean
+181,Alt  Treptow
+182,Plänterwald
+183,Baumschulenweg
+184,Oberschöneweide
+185,Brunsbütteler Damm
+186,Zehlendorf  Südwest
+187,Barstraße
+188,Köpenick-Nord
+189,Rahnsdorf/Hessenwinkel
+190,Fennpfuhl
+191,Friedrichsfelde Süd
+192,Alt-Hohenschönhausen Süd
+193,Alt-Lichtenberg
+194,Frankfurter Allee Süd
+195,Chinatown
+196,North End
+197,Roxbury
+198,South End
+199,Neu Lichtenberg
+200,Kurfürstendamm
+201,Otto-Suhr-Allee
+202,West Town
+203,Austin
+204,Near West Side
+205,Uptown
+206,Near South Side
+207,Near North Side
+208,Schaerbeek
+209,Uccle
+210,Woluwe-Saint-Lambert
+211,Loop
+212,Woluwe-Saint-Pierre
+213,Logan Square
+214,Beacon Hill
+215,Downtown
+216,Fenway
+217,Brighton
+218,West Roxbury
+219,Hyde Park
+220,Dorchester
+221,South Boston Waterfront
+222,South Boston
+223,Allston
+224,Back Bay
+225,East Boston
+226,Charlestown
+227,Roslindale
+228,Jamaica Plain
+229,Mission Hill
+230,Schöneberg-Süd
+231,Tempelhof
+232,Kantstraße
+233,Frankfurter Allee Süd FK
+234,Schillerpromenade
+235,Mariendorf
+236,Adlershof
+237,Mahlsdorf
+238,Ost 1
+239,Ost 2
+240,Regierungsviertel
+241,Brunnenstr. Nord
+242,Schöneberg-Nord
+243,Rummelsburger Bucht
+244,Westend
+245,Osloer Straße
+246,Tiergarten Süd
+247,sterbro
+248,Nrrebro
+249,Indre By
+250,Vesterbro-Kongens Enghave
+251,Amager Vest
+252,Southwark
+253,Lambeth
+254,South Leith
+255,Easter Road and Hawkhill Avenue
+256,Leith (Albert Street)
+257,Hillside and Calton Hill
+258,Commune de Genève
+259,Plan-les-Ouates
+260,Carouge
+261,Brent
+262,Barnet
+263,Waltham Forest
+264,Redbridge
+265,Sutton
+266,Enfield
+267,South Pasadena
+268,Studio City
+269,Sun Valley
+270,Van Nuys
+271,San Pedro
+272,Vermont Square
+273,Santa Monica
+274,Rowland Heights
+275,San Gabriel
+276,Sherman Oaks
+277,Silver Lake
+278,Pico-Robertson
+279,Pasadena
+280,Redondo Beach
+281,Reseda
+282,Rosemead
+283,Sawtelle
+284,Pico Rivera
+285,Porter Ranch
+286,Rancho Palos Verdes
+287,Rancho Park
+288,Meadows and Southside
+289,"Old Town, Princes Street and Leith Street"
+290,Fingal
+291,Dn Laoghaire-Rathdown
+292,South Dublin
+293,"Canongate, Southside and Dumbiedykes"
+294,Comely Bank
+295,Deans Village
+296,Balgreen and Roseburn
+297,West Pilton
+298,New Town East and Gayfield
+299,New Town West
+300,Canonmills and New Town North
+301,Stockbridge
+302,Boswall and Pilton
+303,"Barnton, Cammo and Cramond South"
+304,Central & Western
+305,Vernier
+306,Chêne-Bourg
+307,Chêne-Bougeries
+308,Onex
+309,Yau Tsim Mong
+310,Eastern
+311,Sha Tin
+312,Sai Kung
+313,Dublin City
+314,Prestonfield
+315,Newington and Dalkeith Road
+316,The Grange
+317,Marchmont East and Sciennes
+318,Marchmont West
+319,Polwarth
+320,Dalry and Fountainbridge
+321,Tollcross
+322,Abbeyhill
+323,Morningside
+324,Merchiston and Greenhill
+325,Bruntsfield
+326,Slateford and Chesser
+327,Gorgie East
+328,Shandon
+329,Craiglockhart
+330,Morningside and Craighouse
+331,"Gracemount, Southhouse and Burdiehouse"
+332,Liberton East
+333,Liberton West and Braid Hills
+334,Meadowbank and Abbeyhill North
+335,Craigmillar
+336,Joppa
+337,Portobello
+338,Duddingston and Portobello South
+339,Leith (Hermitage and Prospect Bank)
+340,Western Harbour and Leith Docks
+341,The Shore and Constitution Street
+342,Pilrig
+343,Trinity East and The Dudleys
+344,Broughton South
+345,Amager st
+346,Vanlse
+347,Hounslow
+348,Ealing
+349,Camden
+350,Tower Hamlets
+351,Pico-Union
+352,Azusa
+353,Playa del Rey
+354,Beverlywood
+355,Hackney
+356,Altadena
+357,Arcadia
+358,Atwater Village
+359,Avalon
+360,Carthay
+361,Beverly Grove
+362,Beverly Hills
+363,Newham
+364,Haringey
+365,Barking and Dagenham
+366,Adams-Normandie
+367,Agoura Hills
+368,Arlington Heights
+369,Alhambra
+370,Harvard Heights
+371,Beverly Crest
+372,Valley Village
+373,Boyle Heights
+374,Brentwood
+375,Lewisham
+376,Greenwich
+377,Wandsworth
+378,Richmond upon Thames
+379,Merton
+380,Bromley
+381,Kingston upon Thames
+382,Croydon
+383,Southern
+384,Wan Chai
+385,Kowloon City
+386,Islands
+387,Hillingdon
+388,Harrow
+389,Havering
+390,Westminster
+391,Lake View
+392,Lincoln Park
+393,Edgewater
+394,Frederiksberg
+395,Brnshj-Husum
+396,Lincoln Square
+397,Rogers Park
+398,Jefferson Park
+399,West Ridge
+400,Avondale
+401,Humboldt Park
+402,East Garfield Park
+403,South Lawndale
+404,Lower West Side
+405,Armour Square
+406,North Center
+407,Kensington and Chelsea
+408,City of London
+409,Bispebjerg
+410,Sunnyside
+411,Highland
+412,University
+413,Cheesman Park
+414,Hampden South
+415,Windsor
+416,Northeast Park Hill
+417,North Capitol Hill
+418,CBD
+419,Union Station
+420,Five Points
+421,City Park West
+422,Berkeley
+423,Regis
+424,Capitol Hill
+425,Speer
+426,Skyland
+427,Congress Park
+428,City Park
+429,Cole
+430,Villa Park
+431,West Colfax
+432,West Highland
+433,Sloan Lake
+434,Montclair
+435,Hale
+436,North Park Hill
+437,South Park Hill
+438,Baker
+439,Washington Park West
+440,Palacio
+441,Embajadores
+442,Universidad
+443,West Hollywood
+444,Westlake
+445,Woodland Hills
+446,Valley Glen
+447,Venice
+448,Tarzana
+449,Temple City
+450,Toluca Lake
+451,Topanga
+452,Winnetka
+453,Westwood
+454,Recoletos
+455,Goya
+456,Fuente del Berro
+457,Guindalera
+458,Llucmajor
+459,Santanyí
+460,Alcúdia
+461,Ses Salines
+462,Casa de Campo
+463,Mirasierra
+464,Ciudad Universitaria
+465,Numancia
+466,Puerta del Angel
+467,San Isidro
+468,Campamento
+469,Aguilas
+470,Comillas
+471,Opañel
+472,Vista Alegre
+473,Puerta Bonita
+474,San Fermín
+475,Almendrales
+476,Moscardó
+477,San Diego
+478,Media Legua
+479,Campos
+480,Felanitx
+481,Santa Margalida
+482,Costitx
+483,Douglas
+484,Grand Boulevard
+485,Kenwood
+486,Portage Park
+487,Irving Park
+488,Valby
+489,Hollywood
+490,Exposition Park
+491,Gramercy Park
+492,Gardena
+493,Glassell Park
+494,Glendale
+495,Glendora
+496,Northridge
+497,Playa Vista
+498,Pomona
+499,Hacienda Heights
+500,Hermosa Beach
+501,Hollywood Hills
+502,Echo Park
+503,El Segundo
+504,El Sereno
+505,Encino
+506,Highland Park
+507,Hollywood Hills West
+508,Koreatown
+509,Inglewood
+510,Larchmont
+511,La Verne
+512,Ladera Heights
+513,Lawndale
+514,Lake Balboa
+515,Leimert Park
+516,Los Feliz
+517,Marina del Rey
+518,Lancaster
+519,Lincoln Heights
+520,Mar Vista
+521,Canoga Park
+522,Carson
+523,Chatsworth
+524,Culver City
+525,Century City
+526,Burbank
+527,Lomita
+528,Long Beach
+529,Malibu
+530,Islington
+531,Mid-Wilshire
+532,Monrovia
+533,North Hollywood
+534,Monterey Park
+535,Mount Washington
+536,Pacific Palisades
+537,Palms
+538,Montebello
+539,Montecito Heights
+540,North Hills
+541,Mid-City
+542,Manhattan Beach
+543,Bexley
+544,Hammersmith and Fulham
+545,Saint-Josse-ten-Noode
+546,Claremont
+547,Covina
+548,Del Rey
+549,East Los Angeles
+550,El Monte
+551,Fairfax
+552,East Hollywood
+553,Diamond Bar
+554,Downey
+555,Elysian Valley
+556,Eagle Rock
+557,West Adams
+558,View Park-Windsor Hills
+559,Walnut
+560,Whittier
+561,Torrance
+562,Tujunga
+563,Unincorporated Santa Monica Mountains
+564,University Park
+565,West Covina
+566,Westchester
+567,West Hills
+568,West Los Angeles
+569,Melbourne
+570,Pollença
+571,Fornalutx
+572,Escorca
+573,Esporles
+574,Calvià
+575,Andratx
+576,Santa María del Camí
+577,Stonnington
+578,Port Phillip
+579,Ville-Marie
+580,Le Plateau-Mont-Royal
+581,Le Sud-Ouest
+582,Montréal-Nord
+583,Rosemont-La Petite-Patrie
+584,Boroondara
+585,District 19
+586,District 13
+587,District 29
+588,District 21
+589,Yarra
+590,Yarra Ranges
+591,Whitehorse
+592,Maroondah
+593,Manningham
+594,Melton
+595,Bayside
+596,Moonee Valley
+597,Maribyrnong
+598,Monash
+599,Glen Eira
+600,Moreland
+601,District 3
+602,District 17
+603,District 18
+604,District 20
+605,District 11
+606,District 8
+607,District 32
+608,District 23
+609,District 34
+610,District 35
+611,District 15
+612,Central Business District
+613,Central City
+614,Broadmoor
+615,Fairgrounds
+616,Gentilly Terrace
+617,Milneburg
+618,Irish Channel
+619,Navarre
+620,Lakeview
+621,St. Thomas Dev
+622,West End
+623,Mcdonogh
+624,Leonidas
+625,Lower Garden District
+626,Marigny
+627,Villeray-Saint-Michel-Parc-Extension
+628,Westmount
+629,Verdun
+630,Holy Cross
+631,Algiers Point
+632,Audubon
+633,Bayou St. John
+634,Justicia
+635,Almagro
+636,Rios Rosas
+637,Argüelles
+638,Cortes
+639,Palma de Mallorca
+640,Sóller
+641,Algaida
+642,Maria de la Salut
+643,Montuïri
+644,Petra
+645,Sant Joan
+646,Selva
+647,Inca
+648,Lloseta
+649,Mancor de la Vall
+650,Muro
+651,Sa Pobla
+652,Valldemossa
+653,Campanet
+654,Whalley Range
+655,Didsbury West
+656,Ancoats and Clayton
+657,Bradford
+658,Cheetham
+659,Old Moat
+660,Ventas
+661,Pueblo Nuevo
+662,Quintana
+663,San Juan Bautista
+664,Colina
+665,Costillares
+666,Canillas
+667,Apostol Santiago
+668,Valdefuentes
+669,Artà
+670,Capdepera
+671,Los Rosales
+672,Casco Histórico de Vallecas
+673,Arcos
+674,Alameda de Osuna
+675,Moss Side
+676,Hulme
+677,City Centre
+678,Hobsons Bay
+679,Kingston
+680,Wyndham
+681,Hume
+682,Sol
+683,Castillejos
+684,Vallehermoso
+685,Almenara
+686,Berruguete
+687,Gaztambide
+688,Arapiles
+689,Lista
+690,Castellana
+691,Prosperidad
+692,Ciudad Jardín
+693,Hispanoamérica
+694,Bellas Vistas
+695,Cuatro Caminos
+696,Sant Llorenç des Cardassar
+697,Son Servera
+698,Manacor
+699,Trafalgar
+700,Banyule
+701,Darebin
+702,Sencelles
+703,Sineu
+704,Vilafranc de Bonany
+705,Outremont
+706,Bywater
+707,Dillard
+708,Freret
+709,East Carrollton
+710,East Riverside
+711,Marlyville - Fontainbleau
+712,District 1
+713,District 6
+714,District 27
+715,District 5
+716,District 7
+717,Milan
+718,Seventh Ward
+719,District 16
+720,District 24
+721,District 25
+722,District 26
+723,Treme - Lafitte
+724,St. Claude
+725,St. Roch
+726,Touro
+727,Tulane - Gravier
+728,French Quarter
+729,Cardinia
+730,Lachine
+731,Dollard-des-Ormeaux
+732,Ahuntsic-Cartierville
+733,Côte-des-Neiges-Notre-Dame-de-Grâce
+734,Saint-Laurent
+735,Côte-Saint-Luc
+736,Anjou
+737,Pierrefonds-Roxboro
+738,Mercier-Hochelaga-Maisonneuve
+739,Imperial
+740,Acacias
+741,Chopera
+742,Legazpi
+743,Delicias
+744,Palos de Moguer
+745,Pacífico
+746,Adelfas
+747,Estrella
+748,Ibiza
+749,Jerónimos
+750,West Riverside
+751,Warringah
+752,North Sydney
+753,Canterbury
+754,Strathfield
+755,Auburn
+756,The Hills Shire
+757,Hunters Hill
+758,Sydney
+759,Waverley
+760,Waterfront Communities-The Island
+761,West Humber-Clairville
+762,Kensington-Chinatown
+763,Danforth
+764,Islington-City Centre West
+765,Yorkdale-Glen Park
+766,Tam O'Shanter-Sullivan
+767,Taylor-Massey
+768,Palmerston-Little Italy
+769,Casa Loma
+770,Eringate-Centennial-West Deane
+771,Birchcliffe-Cliffside
+772,Mimico (includes Humber Bay Shores)
+773,Rouge
+774,Woburn
+775,Woodbine Corridor
+776,Yonge-St.Clair
+777,Parkwoods-Donalda
+778,Lansing-Westgate
+779,Humewood-Cedarvale
+780,St.Andrew-Windfields
+781,Flemingdon Park
+782,Broadview North
+783,Cliffcrest
+784,Keelesdale-Eglinton West
+785,Corso Italia-Davenport
+786,Ionview
+787,Junction Area
+788,Caledonia-Fairbank
+789,Roncesvalles
+790,Oakwood Village
+791,Dovercourt-Wallace Emerson-Junction
+792,Lane Cove
+793,Etobicoke West Mall
+794,Greenwood-Coxwell
+795,Clanton Park
+796,Westminster-Branson
+797,Bayview Woods-Steeles
+798,O'Connor-Parkview
+799,High Park North
+800,Kingsway South
+801,Forest Hill South
+802,Annex
+803,North Riverdale
+804,Trinity-Bellwoods
+805,Cannaregio
+806,San Polo
+807,Santa Croce
+808,Giudecca
+809,Murano
+810,Lido
+811,Leopoldstadt
+812,Favaro
+813,Bissuola
+814,Carpenedo
+815,San Lorenzo XXV Aprile
+816,Villaggio San Marco
+817,Piave 1860
+818,Santa Barbara
+819,Chirignago
+820,Randwick
+821,Pittwater
+822,Stevens
+823,Fremont
+824,Innere Stadt
+825,Brigittenau
+826,Floridsdorf
+827,Donaustadt
+828,Neubau
+829,Simmering
+830,Dorsoduro
+831,Mariahilf
+832,Alsergrund
+833,Penzing
+834,Landstra§e
+835,Liesing
+836,Canada Bay
+837,Manly
+838,Ku-Ring-Gai
+839,Willoughby
+840,Mosman
+841,Woollahra
+842,Burwood
+843,York University Heights
+844,The Beaches
+845,South Parkdale
+846,Church-Yonge Corridor
+847,South Riverdale
+848,XIII Aurelia
+849,XII Monte Verde
+850,XIV Monte Mario
+851,II Parioli/Nomentano
+852,XV Cassia/Flaminia
+853,Marina
+854,Del Mar Heights
+855,East Village
+856,Encanto
+857,Midtown
+858,Moreno Mission
+859,La Jolla
+860,Linda Vista
+861,Little Italy
+862,Loma Portal
+863,Gaslamp Quarter
+864,Grant Hill
+865,Grantville
+866,Kensington
+867,Inner Richmond
+868,Bayview
+869,Visitacion Valley
+870,Pacific Heights
+871,Presidio Heights
+872,South of Market
+873,Glen Park
+874,Potrero Hill
+875,Castro/Upper Market
+876,Downtown/Civic Center
+877,Diamond Heights
+878,Russian Hill
+879,City of Capitola
+880,City of Santa Cruz
+881,Mission
+882,Excelsior
+883,Parkside
+884,Financial District
+885,Ocean View
+886,Unincorporated Areas
+887,Mission Bay
+888,Mission Valley
+889,Ocean Beach
+890,Old Town
+891,North Beach
+892,Nob Hill
+893,Bernal Heights
+894,Noe Valley
+895,Inner Sunset
+896,Treasure Island/YBI
+897,Outer Richmond
+898,Crocker Amazon
+899,West Queen Anne
+900,Adams
+901,West Woodland
+902,East Queen Anne
+903,Wallingford
+904,North Queen Anne
+905,Green Lake
+906,Mann
+907,Madrona
+908,University District
+909,Minor
+910,Leschi
+911,Atlantic
+912,Pike-Market
+913,Eastlake
+914,South Lake Union
+915,Lawton Park
+916,Belltown
+917,International District
+918,First Hill
+919,Yesler Terrace
+920,Pioneer Square
+921,Alki
+922,North Admiral
+923,Crown Hill
+924,Fairmount Park
+925,Genesee
+926,Interbay
+927,East End-Danforth
+928,Cabbagetown-South St.James Town
+929,Newtonbrook West
+930,Don Valley Village
+931,Niagara
+932,Dufferin Grove
+933,Highland Creek
+934,North St.James Town
+935,Oakridge
+936,Rosedale-Moore Park
+937,Wexford/Maryvale
+938,Agincourt South-Malvern West
+939,L'Amoreaux
+940,Mount Pleasant East
+941,Mount Pleasant West
+942,Willowridge-Martingrove-Richview
+943,Moss Park
+944,New Toronto
+945,Regent Park
+946,Alderwood
+947,Bendale
+948,Yonge-Eglinton
+949,Lambton Baby Point
+950,Downsview-Roding-CFB
+951,Bay Street Corridor
+952,Willowdale East
+953,High Park-Swansea
+954,Bayview Village
+955,Rockcliffe-Smythe
+956,Little Portugal
+957,"Trento, Trentino"
+958,Trentino
+959,Pleasant View
+960,Wychwood
+961,Leaside-Bennington
+962,Briar Hill-Belgravia
+963,Bridle Path-Sunnybrook-York Mills
+964,Weston
+965,Long Branch
+966,Steeles
+967,Newtonbrook East
+968,Dunbar Southlands
+969,Renfrew-Collingwood
+970,Hastings-Sunrise
+971,Kensington-Cedar Cottage
+972,Killarney
+973,Kerrisdale
+974,Sunset
+975,Marpole
+976,Kitsilano
+977,Riley Park
+978,West Point Grey
+979,Grandview-Woodland
+980,Arbutus Ridge
+981,Mount Pleasant
+982,San Marco
+983,Castello
+984,Strathcona
+985,Sant'Elena
+986,Downtown Eastside
+987,Victoria-Fraserview
+988,South Cambie
+989,Fairview
+990,Holroyd
+991,Ashfield
+992,Marrickville
+993,Parramatta
+994,Ryde
+995,Leichhardt
+996,Hornsby
+997,Botany Bay
+998,Blacktown
+999,Sutherland Shire
+1000,Rockdale
+1001,City Of Kogarah
+1002,Broadway
+1003,Loyal Heights
+1004,Matthews Beach
+1005,Sunset Hill
+1006,High Point
+1007,Seaview
+1008,Temple
+1009,Ménilmontant
+1010,Popincourt
+1011,Reuilly
+1012,Luxembourg
+1013,Entrepôt
+1014,Opéra
+1015,Gobelins
+1016,Vaugirard
+1017,Passy
+1018,Bourse
+1019,Panthéon
+1020,Élysée
+1021,Atocha
+1022,Niño Jesús
+1023,Didsbury East
+1024,South San Gabriel
+1025,South Gate
+1026,Santa Clarita
+1027,San Dimas
+1028,Avocado Heights
+1029,Baldwin Hills/Crenshaw
+1030,Cheviot Hills
+1031,Shadow Hills
+1032,Sierra Madre
+1033,Deyá
+1034,Peñagrande
+1035,Concepción
+1036,Pinar del Rey
+1037,San Andrés
+1038,Simancas
+1039,Salvador
+1040,Bunyola
+1041,Santa Eugènia
+1042,Nueva España
+1043,Castilla
+1044,Puigpunyent
+1045,Pilar
+1046,Valdezarza
+1047,Valverde
+1048,Valdeacederas
+1049,El Viso
+1050,Lucero
+1051,Aluche
+1052,Abrantes
+1053,Pradolongo
+1054,Palomeras Bajas
+1055,Alaró
+1056,Ariany
+1057,Porreres
+1058,Saint-Léonard
+1059,The Inch
+1060,"Blackford, West Mains and Mayfield Road"
+1061,Restalrig (Loganlea) and Craigentinny West
+1062,North Leith and Newhaven
+1063,Great Junction Street
+1064,Murrayfield and Ravelston
+1065,Bonnington
+1066,Broughton North and Powderhall
+1067,East Pasadena
+1068,Elysian Park
+1069,Hancock Park
+1070,Hawthorne
+1071,Granada Hills
+1072,La Cañada Flintridge
+1073,Industry
+1074,Lakewood
+1075,Palmdale
+1076,Casey
+1077,District 12
+1078,District 31
+1079,District 22
+1080,District 33
+1081,District 4
+1082,Frankston
+1083,Garden District
+1084,Fillmore
+1085,Amandus - Atheneum
+1086,Sint-Andries
+1087,Stuivenberg
+1088,ΝΕΑ ΚΥΨΕΛΗ
+1089,ΠΛΑΤΕΙΑ ΑΜΕΡΙΚΗΣ
+1090,ΠΟΛΥΓΩΝΟ
+1091,ΓΚΥΖΗ
+1092,Borgerhout Intra Muros Noord
+1093,ΖΑΠΠΕΙΟ
+1094,Biesdorf
+1095,1Ο ΝΕΚΡΟΤΑΦΕΙΟ
+1096,la Vall d'Hebron
+1097,Karlshorst
+1098,Grunewald
+1099,Friedrichsfelde Nord
+1100,Altglienicke
+1101,Schmargendorf
+1102,Siemensstadt
+1103,Watermael-Boitsfort
+1104,Bridgeport
+1105,Berchem-Sainte-Agathe
+1106,Britz
+1107,Rudow
+1108,Bay Village
+1109,Woodlawn
+1110,Albany Park
+1111,Dunning
+1112,South Shore
+1113,South Chicago
+1114,Norwood Park
+1115,Chaffee Park
+1116,Platt Park
+1117,Gateway - Green Valley Ranch
+1118,Virginia Village
+1119,Washington Park
+1120,Cherry Creek
+1121,Clayton
+1122,Willowbrae and Duddingston Village
+1123,Drylaw
+1124,Trinity
+1125,"Inverleith, Goldenacre and Warriston"
+1126,Granton and Royston Mains
+1127,Granton West and Salvesen
+1128,Muirhouse
+1129,Queensferry East
+1130,Thônex
+1131,Gorgie West
+1132,Greenbank and The Braids
+1133,Sham Shui Po
+1134,Tai Po
+1135,Kwun Tong
+1136,Oakland
+1137,North Lawndale
+1138,Windsor Square
+1139,East San Gabriel
+1140,Harbor Gateway
+1141,La Habra Heights
+1142,Calabasas
+1143,Little Woods
+1144,I Centro Storico
+1145,III Monte Sacro
+1146,IV Tiburtina
+1147,VI Roma delle Torri
+1148,VII San Giovanni/Cinecittà
+1149,X Ostia/Acilia
+1150,XI Arvalia/Portuense
+1151,City Heights West
+1152,Clairemont Mesa
+1153,College Area
+1154,Columbia
+1155,Core
+1156,Cortez Hill
+1157,Darnall
+1158,Del Cerro
+1159,V Prenestino/Centocelle
+1160,Otay Ranch
+1161,Balboa Park
+1162,Bay Park
+1163,La Jolla Village
+1164,Lake Murray
+1165,Midtown District
+1166,Mira Mesa
+1167,Normal Heights
+1168,North Clairemont
+1169,Hosford-Abernethy
+1170,Richmond
+1171,South Portland
+1172,Creston-Kenilworth
+1173,Sullivan's Gulch
+1174,Arbor Lodge
+1175,King
+1176,Vernon
+1177,Irvington
+1178,St. Johns
+1179,Kenton
+1180,Alameda
+1181,Piedmont
+1182,Cully
+1183,Overlook
+1184,Concordia
+1185,Brooklyn Action Corps
+1186,Foster-Powell
+1187,Lents
+1188,Multnomah
+1189,Sellwood-Moreland Improvement League
+1190,Woodstock
+1191,Eastmoreland
+1192,Saint-Louis
+1193,Val-Bélair
+1194,Quartier 5-4
+1195,L'Aéroport
+1196,Cité Universitaire
+1197,Neufchâtel-Est/Lebourgneuf
+1198,Lairet
+1199,Saint-Sauveur
+1200,Quartier 4-2
+1201,Vieux-Québec/Cap-Blanc/Colline parlementaire
+1202,Plateau
+1203,Des Châtels
+1204,Quartier 4-3
+1205,Lac-Saint-Charles
+1206,Montcalm
+1207,Saint-Jean-Baptiste
+1208,Vieux-Limoilou
+1209,Saint-Roch
+1210,Vanier
+1211,Sillery
+1212,Maizerets
+1213,Cap-Rouge
+1214,Saint-Sacrement
+1215,Pacific Beach
+1216,Scripps Ranch
+1217,Serra Mesa
+1218,South Park
+1219,University City
+1220,West University Heights
+1221,Wooded Area
+1222,West of Twin Peaks
+1223,Park West
+1224,Rancho Bernadino
+1225,Rancho Penasquitos
+1226,Roseville
+1227,San Carlos
+1228,Twin Peaks
+1229,Western Addition
+1230,Haight Ashbury
+1231,Outer Mission
+1232,Seacliff
+1233,Greenwood
+1234,North Beacon Hill
+1235,South Delridge
+1236,Columbia City
+1237,Seward Park
+1238,Maple Leaf
+1239,Ravenna
+1240,Outer Sunset
+1241,Harrison/Denny-Blaine
+1242,Parkrose
+1243,Humboldt
+1244,Boise
+1245,Roseway
+1246,Madison South
+1247,Beaumont-Wilshire
+1248,Sabin
+1249,Northwest District
+1250,Grant Park
+1251,Pearl
+1252,Montavilla
+1253,Laurelhurst
+1254,Kerns
+1255,North Tabor
+1256,Old Town/Chinatown
+1257,Goose Hollow
+1258,Buckman
+1259,Mt. Tabor
+1260,VIII Appia Antica
+1261,IX Eur
+1262,"Shaw, Logan Circle"
+1263,"Capitol View, Marshall Heights, Benning Heights"
+1264,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street"
+1265,"West End, Foggy Bottom, GWU"
+1266,"Mayfair, Hillbrook, Mahaning Heights"
+1267,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights"
+1268,"Dupont Circle, Connecticut Avenue/K Street"
+1269,"Brightwood Park, Crestwood, Petworth"
+1270,Hernals
+1271,Ottakring
+1272,Dbling
+1273,"North Cleveland Park, Forest Hills, Van Ness"
+1274,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill"
+1275,"Colonial Village, Shepherd Park, North Portal Estates"
+1276,"Hawthorne, Barnaby Woods, Chevy Chase"
+1277,Historic Anacostia
+1278,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace"
+1279,"Capitol Hill, Lincoln Park"
+1280,Stonegate-Queensway
+1281,Bryant
+1282,Danforth East York
+1283,Dorset Park
+1284,Kennedy Park
+1285,Kingsview Village-The Westway
+1286,Runnymede-Bloor West Village
+1287,Henry Farm
+1288,Guildwood
+1289,Agincourt North
+1290,Englemount-Lawrence
+1291,Lawrence Park North
+1292,Weston-Pellam Park
+1293,Willowdale West
+1294,Blake-Jones
+1295,Bedford Park-Nortown
+1296,Shaughnessy
+1297,Lawrence Park South
+1298,Milliken
+1299,Tessera
+1300,Mid-Beacon Hill
+1301,Briarcliff
+1302,Marghera
+1303,Favoriten
+1304,Hietzing
+1305,Meidling
+1306,Rudolfsheim-Fnfhaus
+1307,Margareten
+1308,Victory Heights
+1309,Whittier Heights
+1310,Roosevelt
+1311,Lower Queen Anne
+1312,Wedgwood
+1313,North Beach/Blue Ridge
+1314,Phinney Ridge
+1315,Hurstville
+1316,Bankstown
+1317,Campbelltown
+1318,Josefstadt
+1319,Wieden
+1320,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir"
+1321,"Ivy City, Arboretum, Trinidad, Carver Langston"
+1322,"Georgetown, Burleith/Hillandale"
+1323,"Union Station, Stanton Park, Kingman Park"
+1324,"Kalorama Heights, Adams Morgan, Lanier Heights"
+1325,"Howard University, Le Droit Park, Cardozo/Shaw"
+1326,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point"
+1327,Whring
+1328,"Edgewood, Bloomingdale, Truxton Circle, Eckington"
+1329,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View"
+1330,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont"
+1331,"Brookland, Brentwood, Langdon"
+1332,"Woodridge, Fort Lincoln, Gateway"
+1333,"Cathedral Heights, McLean Gardens, Glover Park"
+1334,"Congress Heights, Bellevue, Washington Highlands"
+1335,"Near Southeast, Navy Yard"
+1336,"River Terrace, Benning, Greenway, Dupont Park"
+1337,Woodbine-Lumsden
+1338,West Hill
+1339,Eglinton East
+1340,Bathurst Manor
+1341,Olympic Hills
+1342,Bitter Lake
+1343,Portage Bay
+1344,Sorrento Valley
+1345,Tierrasanta
+1346,Torrey Pines
+1347,Gatewood
+1348,Rainier Beach
+1349,Mount Baker
+1350,North Delridge
+1351,Marghera Catene
+1352,"Friendship Heights, American University Park, Tenleytown"
+1353,"Takoma, Brightwood, Manor Park"
+1354,"North Michigan Park, Michigan Park, University Heights"
+1355,"Douglas, Shipley Terrace"
+1356,Madison Park
+1357,Broadview
+1358,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park"
+1359,Greater Dandenong
+1360,Historic South-Central
+1361,Chorlton
+1362,Rusholme
+1363,Aravaca
+1364,Cármenes
+1365,San Pascual
+1366,Palomas
+1367,Rejas
+1368,Panorama City
+1369,Signal Hill
+1370,Veterans Administration
+1371,Dorval
+1372,Pointe-Claire
+1373,LaSalle
+1374,Marroquina
+1375,Banyalbufar
+1376,Lloret de Vistalegre
+1377,Ardwick
+1378,Cerritos
+1379,Compton
+1380,Del Aire
+1381,Lynwood
+1382,Pacoima
+1383,South Tabor
+1384,Hillsdale
+1385,Mt. Scott-Arleta
+1386,Reed
+1387,Centennial
+1388,Notre-Dame-des-Laurentides
+1389,Quartier 4-5
+1390,Jésuites
+1391,Quartier 5-1
+1392,Rose City Park
+1393,Eliot
+1394,Bridgeton
+1395,Portsmouth
+1396,Cathedral Park
+1397,Portland Downtown
+1398,Southwest Hills
+1399,Southwest
+1400,Bay Ho
+1401,el Congrés i els Indians
+1402,Schönholz/Wilhelmsruh/Rosenthal
+1403,Weißensee Ost
+1404,"Vallvidrera, el Tibidabo i les Planes"
+1405,Johannisthal
+1406,West 1
+1407,Markgrave
+1408,Dam
+1409,Athmar Park
+1410,Bellevue
+1411,Grand-Saconnex
+1412,Corstorphine
+1413,Tsuen Wan
+1414,Collonge-Bellerive
+1415,Hampden
+1416,Washington Virginia Vale
+1417,La Mirada
+1418,Old Aurora
+1419,Búger
+1420,Llubí
+1421,Buenavista
+1422,Portazgo
+1423,Fontarrón
+1424,La Paz
+1425,Piovera
+1426,Fallowfield
+1427,Chorlton Park
+1428,Harbor City
+1429,Bel-Air
+1430,Bellflower
+1431,West Carson
+1432,Binissalem
+1433,Estellencs
+1434,Casco Histórico de Barajas
+1435,Knox
+1436,Whittlesea
+1437,ΠΡΟΜΠΟΝΑ
+1438,Ostpreußendamm
+1439,Groenenhoek
+1440,Deurne Zuid West
+1441,Wilhelmstadt
+1442,Gatow / Kladow
+1443,Castaic Canyons
+1444,Consell
+1445,Palomeras Sureste
+1446,Vinateros
+1447,Marratxí
+1448,St.  Anthony
+1449,District 10
+1450,Norwalk
+1451,Sylmar
+1452,Stevenson Ranch
+1453,Brimbank
+1454,Nillumbik
+1455,La Crescenta-Montrose
+1456,Longsight
+1457,District 14
+1458,District 28
+1459,Black Pearl
+1460,Schmöckwitz/Karolinenhof/Rauchfangswerder
+1461,Zona Commerciale via Torino
+1462,Alberoni
+1463,Montlake
+1464,Haller Lake
+1465,Carmel Valley
+1466,Memorial
+1467,Bird Land
+1468,Brentwood-Darlington
+1469,Chutes-Montmorency
+1470,Vieux-Moulin
+1471,Loretteville
+1472,Duberger-Les Saules
+1473,Homestead
+1474,Banbury-Don Mills
+1475,Clairlea-Birchmount
+1476,Lakeshore
+1477,Old East York
+1478,Hillcrest Village
+1479,Mount Dennis
+1480,Playter Estates-Danforth
+1481,Penrith
+1482,"Sheridan, Barry Farm, Buena Vista"
+1483,Blackhall
+1484,Northfield and Piershill
+1485,Rosedale
+1486,Cory - Merrill
+1487,Stapleton
+1488,Rivière-des-Prairies-Pointe-aux-Trembles
+1489,District 2
+1490,Washington Heights
+1491,Friedrichshagen
+1492,Dammvorstadt
+1493,Borgerhout Extra Muros
+1494,la Font d'en Fargues
+1495,Kaulsdorf
+1496,Karow
+1497,Spandau Mitte
+1498,Lankwitz
+1499,North College Park
+1500,Northwest
+1501,Hayhurst
+1502,Pointe-de-Sainte-Foy
+1503,Hilltop
+1504,Cypress Park
+1505,"Craigleith, Orchard Brae and Crewe Toll"
+1506,Meyrin
+1507,Sunland
+1508,Nord 2
+1509,Marzahn-Süd
+1510,Timón
+1511,Yuen Long
+1512,Withington
+1513,Levenshulme
+1514,Casco Histórico de Vicálvaro
+1515,Entrevías
+1516,ΣΤΑΘΜΟΣ ΛΑΡΙΣΗΣ
+1517,West 2
+1518,ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ
+1519,MV 1
+1520,East Craigs North
+1521,Versoix
+1522,North
+1523,Colinton and Kingsknowe
+1524,Duarte
+1525,Greater Grand Crossing
+1526,Belmont Cragin
+1527,Bonaly and The Pentlands
+1528,Tuen Mun
+1529,Civic Center
+1530,Cologny
+1531,Los Angeles
+1532,Stenhouse and Saughton Mains
+1533,Colinton Mains and Firrhill
+1534,Clinton Hill
+1535,Cobble Hill
+1536,Crown Heights
+1537,East Harlem
+1538,Elmhurst
+1539,East New York
+1540,Downtown Brooklyn
+1541,East Elmhurst
+1542,East Flatbush
+1543,Chelsea
+1544,Columbia St
+1545,Concourse
+1546,Concourse Village
+1547,Coney Island
+1548,Corona
+1549,DUMBO
+1550,Fort Greene
+1551,Fort Hamilton
+1552,Fresh Meadows
+1553,Gramercy
+1554,Gravesend
+1555,Greenpoint
+1556,Greenwich Village
+1557,Upper West Side
+1558,Upper East Side
+1559,Palais-Bourbon
+1560,Buttes-Chaumont
+1561,Woodhaven
+1562,West Village
+1563,Williamsburg
+1564,Ditmars Steinway
+1565,Arverne
+1566,Bedford-Stuyvesant
+1567,Bushwick
+1568,Borough Park
+1569,Prospect-Lefferts Gardens
+1570,Astoria
+1571,Battery Park City
+1572,Bay Ridge
+1573,Bensonhurst
+1574,Boerum Hill
+1575,Carroll Gardens
+1576,Lancy
+1577,Flushing
+1578,Gowanus
+1579,Forest Hills
+1580,Flatbush
+1581,Flatiron District
+1582,Flatlands
+1583,Harlem
+1584,Hell's Kitchen
+1585,Far Rockaway
+1586,Highbridge
+1587,Inwood
+1588,Stuyvesant Town
+1589,Sunset Park
+1590,Kips Bay
+1591,Murray Hill
+1592,Long Island City
+1593,Lower East Side
+1594,Jackson Heights
+1595,Jamaica
+1596,Morningside Heights
+1597,NoHo
+1598,Nolita
+1599,Park Slope
+1600,Midwood
+1601,Maspeth
+1602,Prospect Heights
+1603,Rego Park
+1604,Richmond Hill
+1605,Ridgewood
+1606,Roosevelt Island
+1607,SoHo
+1608,Theater District
+1609,Sheepshead Bay
+1610,South Slope
+1611,Parkchester
+1612,Queens Village
+1613,Port Morris
+1614,Tribeca
+1615,Two Bridges
+1616,Vinegar Hill
+1617,University Heights
+1618,Windsor Terrace
+1619,Wakefield
+1620,Oakland Ave-Harrison St
+1621,Oakmore
+1622,Piedmont Avenue
+1623,Prescott
+1624,Produce And Waterfront
+1625,Ralph Bunche
+1626,Reservoir Hill-Meadow Brook
+1627,Rockridge
+1628,Sequoyah
+1629,Shafter
+1630,Batignolles-Monceau
+1631,BALLINA SHIRE COUNCIL
+1632,LISMORE CITY COUNCIL
+1633,BYRON SHIRE COUNCIL
+1634,Adams Point
+1635,Bushrod
+1636,Fairview Park
+1637,Shepherd Canyon
+1638,Temescal
+1639,TWEED SHIRE COUNCIL
+1640,Glenview
+1641,Golden Gate
+1642,Lakewide
+1643,Longfellow
+1644,Maxwell Park
+1645,Mosswood
+1646,Millsmont
+1647,Ambroz
+1648,Kingsbridge
+1649,Longwood
+1650,Woodside
+1651,Williamsbridge
+1652,CLARENCE VALLEY COUNCIL
+1653,Wong Tai Sin
+1654,Englewood
+1655,Mattapan
+1656,Oak Park
+1657,Kearny Mesa
+1658,Rolando
+1659,Talmadge
+1660,North City
+1661,City Heights East
+1662,South Burlingame
+1663,Southeast Magnolia
+1664,Powellhurst-Gilbert
+1665,Northwest Heights
+1666,Paradise Hills
+1667,Hazelwood
+1668,Victoria Village
+1669,Malvern
+1670,Quartier 5-2
+1671,Mount Hope
+1672,Forest Hill North
+1673,Clason Point
+1674,Lake Merritt
+1675,San Pablo Gateway
+1676,Clawson
+1677,Eastmont Hills
+1678,Redwood Heights
+1679,Upper Laurel
+1680,Upper Rockridge
+1681,Cypress Hills
+1682,Allerton
+1683,Mott Haven
+1684,Brooklyn Heights
+1685,Brownsville
+1686,Briarwood
+1687,Canarsie
+1688,Dyker Heights
+1689,Navy Yard
+1690,Norwood
+1691,St. Albans
+1692,St. George
+1693,Red Hook
+1694,Rockaway Beach
+1695,Springfield Gardens
+1696,Louvre
+1697,Observatoire
+1698,Brighton Beach
+1699,Tompkinsville
+1700,South Ozone Park
+1701,Clinton
+1702,Crocker Highland
+1703,Hoover-Foster
+1704,Ivy Hill
+1705,Merriwood
+1706,Oak Center
+1707,Old City-Produce And Waterfront
+1708,Paradise Park
+1709,Piedmont Pines
+1710,Santa Fe
+1711,Trestle Glen
+1712,Dunlap
+1713,Morris Heights
+1714,Kew Gardens Hills
+1715,Caballo Hills
+1716,Cleveland Heights
+1717,Gaskill
+1718,Bath Beach
+1719,Kwai Tsing
+1720,Pelmo Park-Humberlea
+1721,Kew Gardens
+1722,Grand Lake
+1723,McClymonds
+1724,Pill Hill
+1725,Jamaica Estates
+1726,Fieldston
+1727,Clifton
+1728,Ozone Park
+1729,Marble Hill
+1730,Middle Village
+1731,Randall Manor
+1732,Fordham
+1733,Arrochar
+1734,Fuller Park
+1735,Lynn-Highland Park
+1736,Eastchester
+1737,Golf Links

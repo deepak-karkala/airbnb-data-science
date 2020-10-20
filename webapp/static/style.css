@@ -94,12 +94,13 @@ body {
 .masthead .intro-body {
   display: table-cell;
   vertical-align: middle;
+  padding-top: 50px;
 }
 
 .masthead .intro-body .brand-heading {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
-  color: black; /*#FF5A60;*/
+  color: #FF5A60;
   font-weight: bolder;
   /*text-shadow: 3px 5px #000000;*/
 }
@@ -195,8 +196,33 @@ body {
 }
 
 
+/* Custom */
+/*
+.control-group {
+	text-align: left;
+	padding-left: 30px;
+}
+*/
+.listing_form_row {
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.listing_form_bottom_row {
+	padding-bottom: 15px;
+}
+
 .listing_form {
 	background-color: white;
+	color: black;
+}
+
+.model_output_row {
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #FF5A60;
 }
 
 p {
