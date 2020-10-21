@@ -216,38 +216,45 @@
                         {% endif %}
                     </div>
                     <div class="col-lg-4 col-4">
-                        Bedrooms: <input size="3" type="text" placeholder="1" id="num_bedrooms">
+                        {% if result %}
+                          Bedrooms: <input size="3" type="text" placeholder="1" id="num_bedrooms" name="num_bedrooms" value={{original_input.num_bedrooms}}>
+                        {% else %}
+                          Bedrooms: <input size="3" type="text" placeholder="1" id="num_bedrooms" name="num_bedrooms">
+                        {% endif %}
                     </div>
                     <div class="col-lg-4 col-4">
-                        Beds: <input size="3" type="text" placeholder="1" id="num_beds">
+                        {% if result %}
+                          Beds: <input size="3" type="text" placeholder="1" id="num_beds" name="num_beds" value={{original_input.num_beds}}>
+                        {% else %}
+                          Beds: <input size="3" type="text" placeholder="1" id="num_beds" name="num_beds">
+                        {% endif %}
                     </div>
                 </div>
               </div>
             </div>
 
-<!--            
-"Minimum Nights", "Availability 30", "Availability 60", "Availability 90", "Availability 365"
-# "Number of Reviews", 
-# Review Scores Rating(20-100)
-# "Host Since" (num_days = current_date - host_since_date), Host Response Rate(0-100),"Calculated host listings count"
-
-Accommodates(1-16), "Bedrooms"(0-10), "Beds"(0-16)
-# "Review Scores Accuracy(2-10)", "Review Scores Cleanliness(2-10)","Review Scores Checkin(2-10)", "Review Scores Communication(2-10)", "Review Scores Location(2-10)","Review Scores Value(2-10)"
-
-"Bed Type", "Cancellation Policy"
-# "Host Response Time"
--->
-
             <!-- Availability -->
             <div class="row listing_form_row">
               <div class="col-lg-4 col-4">
-                  Min nights: <input size="3" type="text" placeholder="1" id="min_nights">
+                  {% if result %}
+                    Min nights: <input size="3" type="text" placeholder="1" id="min_nights" name="min_nights" value={{original_input.min_nights}}>
+                  {% else %}
+                    Min nights: <input size="3" type="text" placeholder="1" id="min_nights" name="min_nights">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Availability 30: <input size="3" type="text" placeholder="15" id="availability_30">
+                  {% if result %}
+                    Availability 30: <input size="3" type="text" placeholder="15" id="availability_30" name="availability_30" value={{original_input.availability_30}}>
+                  {% else %}
+                    Availability 30: <input size="3" type="text" placeholder="15" id="availability_30" name="availability_30">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Availability 365: <input size="3" type="text" placeholder="150" id="availability_365">
+                  {% if result %}
+                    Availability 365: <input size="3" type="text" placeholder="150" id="availability_365" name="availability_365" value={{original_input.availability_365}}>
+                  {% else %}
+                    Availability 365: <input size="3" type="text" placeholder="150" id="availability_365" name="availability_365">
+                  {% endif %}
               </div>
             </div>
 
@@ -255,34 +262,66 @@ Accommodates(1-16), "Bedrooms"(0-10), "Beds"(0-16)
             <!-- Reviews -->
             <div class="row listing_form_row">
               <div class="col-lg-4 col-4">
-                  Number of reviews: <input size="3" type="text" placeholder="50" id="num_reviews">
+                  {% if result %}
+                    Number of reviews: <input size="3" type="text" placeholder="50" id="num_reviews" name="num_reviews" value={{original_input.num_reviews}}>
+                  {% else %}
+                    Number of reviews: <input size="3" type="text" placeholder="50" id="num_reviews" name="num_reviews">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Review Score: <input size="6" type="text" placeholder="20-100" id="review_scores_rating">
-              </div>
-            </div>
-
-            <div class="row listing_form_row">
-              <div class="col-lg-4 col-4">
-                  Accuracy Score: <input size="6" type="text" placeholder="2-10" id="review_scores_accuracy">
-              </div>
-              <div class="col-lg-4 col-4">
-                  Cleanliness Score: <input size="6" type="text" placeholder="2-10" id="review_scores_cleanliness">
-              </div>
-              <div class="col-lg-4 col-4">
-                  Checkin Score: <input size="6" type="text" placeholder="2-10" id="review_scores_checkin">
+                  {% if result %}
+                    Review Score: <input size="6" type="text" placeholder="20-100" id="review_scores_rating" name="review_scores_rating" value={{original_input.review_scores_rating}}>
+                  {% else %}
+                    Review Score: <input size="6" type="text" placeholder="20-100" id="review_scores_rating" name="review_scores_rating">
+                  {% endif %}
               </div>
             </div>
 
             <div class="row listing_form_row">
               <div class="col-lg-4 col-4">
-                  Interaction Score: <input size="6" type="text" placeholder="2-10" id="review_scores_communication">
+                  {% if result %}
+                    Accuracy Score: <input size="6" type="text" placeholder="2-10" id="review_scores_accuracy" name="review_scores_accuracy" value={{original_input.review_scores_accuracy}}>
+                  {% else %}
+                    Accuracy Score: <input size="6" type="text" placeholder="2-10" id="review_scores_accuracy" name="review_scores_accuracy">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Location Score: <input size="6" type="text" placeholder="2-10" id="review_scores_location">
+                  {% if result %}
+                    Cleanliness Score: <input size="6" type="text" placeholder="2-10" id="review_scores_cleanliness" name="review_scores_cleanliness" value={{original_input.review_scores_cleanliness}}>
+                  {% else %}
+                    Cleanliness Score: <input size="6" type="text" placeholder="2-10" id="review_scores_cleanliness" name="review_scores_cleanliness">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Value Score: <input size="6" type="text" placeholder="2-10" id="review_scores_value">
+                  {% if result %}
+                    Checkin Score: <input size="6" type="text" placeholder="2-10" id="review_scores_checkin" name="review_scores_checkin" value={{original_input.review_scores_checkin}}>
+                  {% else %}
+                    Checkin Score: <input size="6" type="text" placeholder="2-10" id="review_scores_checkin" name="review_scores_checkin">
+                  {% endif %}
+              </div>
+            </div>
+
+            <div class="row listing_form_row">
+              <div class="col-lg-4 col-4">
+                  {% if result %}
+                    Interaction Score: <input size="6" type="text" placeholder="2-10" id="review_scores_communication" name="review_scores_communication" value={{original_input.review_scores_communication}}>
+                  {% else %}
+                    Interaction Score: <input size="6" type="text" placeholder="2-10" id="review_scores_communication" name="review_scores_communication">
+                  {% endif %}
+              </div>
+              <div class="col-lg-4 col-4">
+                  {% if result %}
+                    Location Score: <input size="6" type="text" placeholder="2-10" id="review_scores_location" name="review_scores_location" value={{original_input.review_scores_location}}>
+                  {% else %}
+                    Location Score: <input size="6" type="text" placeholder="2-10" id="review_scores_location" name="review_scores_location">
+                  {% endif %}
+              </div>
+              <div class="col-lg-4 col-4">
+                  {% if result %}
+                    Value Score: <input size="6" type="text" placeholder="2-10" id="review_scores_value" name="review_scores_value" value={{original_input.review_scores_value}}>
+                  {% else %}
+                    Value Score: <input size="6" type="text" placeholder="2-10" id="review_scores_value" name="review_scores_value">
+                  {% endif %}
               </div>
             </div>
 
@@ -291,13 +330,25 @@ Accommodates(1-16), "Bedrooms"(0-10), "Beds"(0-16)
             <!-- Host -->
             <div class="row listing_form_row">
               <div class="col-lg-4 col-4">
-                  Host Since: <input size="8" type="text" placeholder="100 days" id="host_since">
+                  {% if result %}
+                    Host Since: <input size="8" type="text" placeholder="100 days" id="host_since" name="host_since" value={{original_input.host_since}}>
+                  {% else %}
+                    Host Since: <input size="8" type="text" placeholder="100 days" id="host_since" name="host_since">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Response Rate: <input size="6" type="text" placeholder="0-100" id="host_response_rate">
+                  {% if result %}
+                    Response Rate: <input size="6" type="text" placeholder="0-100" id="host_response_rate" name="host_response_rate"value={{original_input.host_response_rate}}>
+                  {% else %}
+                    Response Rate: <input size="6" type="text" placeholder="0-100" id="host_response_rate" name="host_response_rate">
+                  {% endif %}
               </div>
               <div class="col-lg-4 col-4">
-                  Num listings: <input size="6" type="text" placeholder="1" id="host_num_listings">
+                  {% if result %}
+                    Num listings: <input size="6" type="text" placeholder="1" id="host_num_listings" name="host_num_listings" value={{original_input.host_num_listings}}>
+                  {% else %}
+                    Num listings: <input size="6" type="text" placeholder="1" id="host_num_listings" name="host_num_listings">
+                  {% endif %}
               </div>
             </div>
 
