@@ -225,6 +225,12 @@ body {
 	color: #FF5A60;
 }
 
+.model_output_price {
+	background-color: #ececec;
+	color: #00A699;
+	font-size: 1.5rem;
+}
+
 p {
 	color: black;
 }
@@ -232,4 +238,8 @@ p {
 .select2_select {
   width: 15vw;
   margin-bottom: 20px;
+}
+
+.filled_value {
+	background-color: #FF5A60;
 }

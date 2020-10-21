@@ -107,20 +107,32 @@
               </div>
             </div>
 
+
+            <form action="{{ url_for('hello') }}" method="POST">
+
             <!-- Location -->
             <div class="row listing_form_row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
 
                 <div class="control-group">
                   Location: 
-                  <select id="combobox_country" class="select2_select">
+                  <select id="combobox_country" class="select2_select" name="combobox_country">
                     <option value="">Country</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.country}}</option>
+                    {% endif %}
                   </select> 
-                  <select id="combobox_city" class="select2_select">
+                  <select id="combobox_city" class="select2_select" name="combobox_city">
                     <option value="">City</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.city}}</option>
+                    {% endif %}
                   </select> 
-                  <select id="combobox_neighbourhood" class="select2_select">
+                  <select id="combobox_neighbourhood" class="select2_select" name="combobox_neighbourhood">
                     <option value="">Neighbourhood</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.neighbourhood}}</option>
+                    {% endif %}
                   </select> 
                 </div> 
                     
@@ -145,14 +157,23 @@
 
                 <div class="control-group">
                   Listing: 
-                  <select id="combobox_propertytype" class="select2_select">
+                  <select id="combobox_propertytype" class="select2_select" name="combobox_propertytype">
                     <option value="">Property Type</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.propertytype}}</option>
+                    {% endif %}
                   </select> 
-                  <select id="combobox_roomtype" class="select2_select">
+                  <select id="combobox_roomtype" class="select2_select" name="combobox_roomtype">
                     <option value="">Room Type</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.roomtype}}</option>
+                    {% endif %}
                   </select> 
-                  <select id="combobox_bedtype" class="select2_select">
+                  <select id="combobox_bedtype" class="select2_select" name="combobox_bedtype">
                     <option value="">Bed Type</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.bedtype}}</option>
+                    {% endif %}
                   </select> 
                 </div> 
 
@@ -165,11 +186,17 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
 
                 <div class="control-group">
-                  <select id="combobox_cancellationpolicy" class="select2_select">
+                  <select id="combobox_cancellationpolicy" class="select2_select" name="combobox_cancellationpolicy">
                     <option value="">Cancellation Policy</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.cancellationpolicy}}</option>
+                    {% endif %}
                   </select> 
-                  <select id="combobox_hostresponsetime" class="select2_select">
+                  <select id="combobox_hostresponsetime" class="select2_select" name="combobox_hostresponsetime">
                     <option value="">Host Response Time</option>
+                    {% if result %}
+                      <option value="" selected="selected">{{original_input.hostresponsetime}}</option>
+                    {% endif %}
                   </select> 
                 </div> 
 
@@ -182,7 +209,11 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
                 <div class="row">
                     <div class="col-lg-4 col-4">
-                        Accommodates: <input size="3" type="text" placeholder="2" id="accommodates">
+                        {% if result %}
+                          Accommodates: <input size="3" type="text" id="accommodates"  name="accommodates" value={{original_input.accommodates}}>
+                        {% else %}
+                          Accommodates: <input size="3" type="text" placeholder="2" id="accommodates" name="accommodates">
+                        {% endif %}
                     </div>
                     <div class="col-lg-4 col-4">
                         Bedrooms: <input size="3" type="text" placeholder="1" id="num_bedrooms">
@@ -277,11 +308,19 @@ Accommodates(1-16), "Bedrooms"(0-10), "Beds"(0-16)
               </div>
             </div>
 
+            </form>
+
+
             <div class="row listing_form_row listing_form_bottom_row model_output_row">
               <div class="col-lg-12 col-12 mx-auto">
-                Suggested price per night: USD 
+                {% if result %}
+                  Suggested price per night: <span class="badge badge-secondary model_output_price">USD  {{ result }}</span>
+                {% else %}
+                  Suggested price per night: <span class="badge badge-secondary model_output_price">USD ___ </span>
+                {% endif %}
               </div>
             </div>
+
 
           </div>
         </div>
