@@ -91,15 +91,15 @@ def create_app(test_config=None):
                                     review_scores_cleanliness, review_scores_checkin, review_scores_communication,
                                     review_scores_location, review_scores_value, host_response_rate,
                                     ]],
-                                           columns=['Country', 'City', 'Neighbourhood Cleansed', 'Property Type',
-                                                   'Room Type', 'Bed Type', 'Cancellation Policy', 'Host Response Time',
-                                                   'Accommodates', 'Bedrooms', 'Beds', 'Minimum Nights', 'Availability 30',
-                                                   'Availability 60', 'Availability 90', 'Availability 365',
-                                                   'Number of Reviews', 'Reviews per Month', 'Review Scores Rating',
-                                                   'Review Scores Accuracy', 'Review Scores Cleanliness',
-                                                   'Review Scores Checkin', 'Review Scores Communication',
-                                                   'Review Scores Location', 'Review Scores Value', 'Host Response Rate'],
-                                           dtype=float)
+                                   columns=['Country', 'City', 'Neighbourhood Cleansed', 'Property Type',
+                                           'Room Type', 'Bed Type', 'Cancellation Policy', 'Host Response Time',
+                                           'Accommodates', 'Bedrooms', 'Beds', 'Minimum Nights', 'Availability 30',
+                                           'Availability 60', 'Availability 90', 'Availability 365',
+                                           'Number of Reviews', 'Reviews per Month', 'Review Scores Rating',
+                                           'Review Scores Accuracy', 'Review Scores Cleanliness',
+                                           'Review Scores Checkin', 'Review Scores Communication',
+                                           'Review Scores Location', 'Review Scores Value', 'Host Response Rate'],
+                                   dtype=float)
 
             # Inference: Get prediction from Model
             prediction_price = model.predict(df_input)[0]
