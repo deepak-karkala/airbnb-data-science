@@ -2,13 +2,13 @@ import os
 import pickle
 from flask import Flask
 import flask
-from flask_bootstrap import Bootstrap
+#from flask_bootstrap import Bootstrap
 import sklearn
 import joblib
 import pandas as pd
 
 # Load pre-trained machine learning model.
-base_path = "/Users/nesara/Documents/aim/cs/projects/airbnb-data-science/webapp/";
+base_path = "/Users/nesara/Documents/aim/cs/projects/airbnb-data-science/webapp_predict_price/";
 #with open(base_path + 'static/model/decision_tree.pkl', 'rb') as f:
 #    model = pickle.load(f)
 model = joblib.load(base_path + "static/model/fullpipeline_linearregression.pkl")
@@ -158,6 +158,6 @@ def create_app(test_config=None):
                                          )
             """
 
-    Bootstrap(app)
+    #Bootstrap(app)
 
     return app
