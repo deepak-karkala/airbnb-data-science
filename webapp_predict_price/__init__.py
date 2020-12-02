@@ -1,17 +1,19 @@
-import os
+import os, sys
+sys.path.append(".")
+import webapp_predict_price
+
 import pickle
 from flask import Flask
 import flask
-#from flask_bootstrap import Bootstrap
 import sklearn
 import joblib
 import pandas as pd
 
 # Load pre-trained machine learning model.
-base_path = "/Users/nesara/Documents/aim/cs/projects/airbnb-data-science/webapp_predict_price/";
+BASE_PATH = "webapp_predict_price/"
 #with open(base_path + 'static/model/decision_tree.pkl', 'rb') as f:
 #    model = pickle.load(f)
-model = joblib.load(base_path + "static/model/fullpipeline_linearregression.pkl")
+model = joblib.load(BASE_PATH + "static/model/fullpipeline_linearregression.pkl")
 
 
 def create_app(test_config=None):
@@ -50,36 +52,85 @@ def create_app(test_config=None):
 
             # Dropdowns
             country = flask.request.form.get('combobox_country')
+            if country == "":
+                country = "United States"
             city = flask.request.form.get('combobox_city')
+            if city == "":
+                city = "New York"
             neighbourhood = flask.request.form.get('combobox_neighbourhood')
+            if neighbourhood == "":
+                neighbourhood = "Downtown Brooklyn"
             propertytype = flask.request.form.get('combobox_propertytype')
+            if propertytype == "":
+                propertytype = "House"
             roomtype = flask.request.form.get('combobox_roomtype')
+            if roomtype == "":
+                roomtype = "Entire home/apt"
             bedtype = flask.request.form.get('combobox_bedtype')
+            if bedtype == "":
+                bedtype = "Real Bed"
             cancellationpolicy = flask.request.form.get('combobox_cancellationpolicy')
+            if cancellationpolicy == "":
+                cancellationpolicy = "moderate"
             hostresponsetime = flask.request.form.get('combobox_hostresponsetime')
-
+            if hostresponsetime == "":
+                hostresponsetime = "within a day"
 
             # Text input
             accommodates = flask.request.form['accommodates']
+            if accommodates == "":
+                accommodates = 2
             num_bedrooms = flask.request.form['num_bedrooms']
+            if num_bedrooms == "":
+                num_bedrooms = 1
             num_beds = flask.request.form['num_beds']
+            if num_beds == "":
+                num_beds = 1
             min_nights = flask.request.form['min_nights']
+            if min_nights == "":
+                min_nights = 1
             availability_30 = flask.request.form['availability_30']
+            if availability_30 == "":
+                availability_30 = 15
             availability_60 = 12
             availability_90 = 12
             availability_365 = flask.request.form['availability_365']
+            if availability_365 == "":
+                availability_365 = 150
             num_reviews = flask.request.form['num_reviews']
+            if num_reviews == "":
+                num_reviews = 50
             reviews_per_month = 0.22
             review_scores_rating = flask.request.form['review_scores_rating']
+            if review_scores_rating == "":
+                review_scores_rating = 80
             review_scores_accuracy = flask.request.form['review_scores_accuracy']
+            if review_scores_accuracy == "":
+                review_scores_accuracy = 8
             review_scores_cleanliness = flask.request.form['review_scores_cleanliness']
+            if review_scores_cleanliness == "":
+                review_scores_cleanliness = 8
             review_scores_checkin = flask.request.form['review_scores_checkin']
+            if review_scores_checkin == "":
+                review_scores_checkin = 8
             review_scores_communication = flask.request.form['review_scores_communication']
+            if review_scores_communication == "":
+                review_scores_communication = 8
             review_scores_location = flask.request.form['review_scores_location']
+            if review_scores_location == "":
+                review_scores_location = 8
             review_scores_value = flask.request.form['review_scores_value']
+            if review_scores_value == "":
+                review_scores_value = 8
             host_since = flask.request.form['host_since']
+            if host_since == "":
+                host_since = 100
             host_response_rate = flask.request.form['host_response_rate']
+            if host_response_rate == "":
+                host_response_rate = 90
             host_num_listings = flask.request.form['host_num_listings']
+            if host_num_listings == "":
+                host_num_listings = 1
 
 
 
@@ -103,7 +154,7 @@ def create_app(test_config=None):
 
             # Inference: Get prediction from Model
             prediction_price = model.predict(df_input)[0]
-
+            prediction_price = round(prediction_price)
 
 
 
@@ -161,3 +212,12 @@ def create_app(test_config=None):
     #Bootstrap(app)
 
     return app
+
+
+# if this is the main thread of execution first load the model and
+# then start the server
+if __name__ == "__main__":
+    print(("* Loading Scikit-learn model and Flask starting server..."
+        "please wait until server has fully started"))
+    app = create_app()
+    app.run(host='0.0.0.0', port=5000)

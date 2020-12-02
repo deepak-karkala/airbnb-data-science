@@ -206,7 +206,7 @@ body {
 .listing_form_row {
 	text-align: left;
 	padding-left: 30px;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
 .listing_form_bottom_row {
@@ -216,6 +216,10 @@ body {
 .listing_form {
 	background-color: white;
 	color: black;
+  -webkit-box-shadow: 3px 3px 5px 4px #000;
+  -moz-box-shadow:    3px 3px 5px 4px #000;
+  box-shadow:         3px 3px 5px 4px #000;
+  border-radius: 12px;
 }
 
 .model_output_row {
