@@ -1,0 +1,222 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} Set price for my Airbnb listing</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='select2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{url_for('.static', filename='jquery.min.js')}}"></script>
+<script src="{{url_for('.static', filename='bootstrap.bundle.min.js')}}"></script>
+<script src="{{url_for('static', filename='select2.js')}}"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+
+<!--
+<nav>
+  <h1>Flaskr</h1>
+  <ul>
+    {% if g.user %}
+      <li><span>{{ g.user['username'] }}</span>
+      <li><a href="{{ url_for('hello') }}">Log Out</a>
+    {% else %}
+      <li><a href="{{ url_for('hello') }}">Register</a>
+      <li><a href="{{ url_for('hello') }}">Log In</a>
+    {% endif %}
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
+-->
+
+<nav class="navbar navbar-expand-lg navbar_style fixed-top" id="mainNav">
+    <a class="nav-link" href="http://deepakkarkala.com/">Home</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" id="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        
+    </button>
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="">About this project</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="http://deepakkarkala.com/">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://deepakkarkala.com/#about_me">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://deepakkarkala.com/#contact_me">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="masthead">
+  <div class="intro-body">
+    <!--<div class="container">-->
+
+
+      <div class="row">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
+          <div class="listing_form">
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+                <h1 class="brand-heading">Alternate searches for Airbnb listings</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+                <p class="intro-text text-center">
+                  Search listings in New York City by 
+                </p>
+              </div>
+            </div>
+
+
+            <form action="{{ url_for('hello') }}" method="POST">
+
+              <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
+                  <div id="toolbar" class="btn-toolbar text-center justify-content-center">
+
+                    {% if filter_product_category %}
+
+                      {% if filter_product_category == "Random" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Random">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Random">
+                      {% endif %}
+
+                      {% if filter_product_category == "Image aesthetic: Low to High" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Image aesthetic: Low to High">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Image aesthetic: Low to High">
+                      {% endif %}
+
+                      {% if filter_product_category == "Image aesthetic: High to Low" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Image aesthetic: High to Low">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Image aesthetic: High to Low">
+                      {% endif %}
+
+                      {% if filter_product_category == "Listing Vibe: Vibe1" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Listing Vibe: Vibe1">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe1">
+                      {% endif %}
+
+                      {% if filter_product_category == "Listing Vibe: Vibe2" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Listing Vibe: Vibe2">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe2">
+                      {% endif %}
+
+                      {% if filter_product_category == "Listing Vibe: Vibe3" %}
+                        <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Listing Vibe: Vibe3">
+                      {% else %}
+                        <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe3">
+                      {% endif %}
+
+                    {% else %}
+
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Random">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Image aesthetic: Low to High">
+                      <input type="submit" name="filter_product_button" class="button active" id="filter_product_button" value="Image aesthetic: High to Low">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe1">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe2">
+                      <input type="submit" name="filter_product_button" class="button" id="filter_product_button" value="Listing Vibe: Vibe3">
+                    {% endif %}
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row listing_showcase">
+                {% for listing in listings %}
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                      <div class="listing_item">
+                        <div class="row">
+                          <div class="col-lg-12 col-12">
+                            <img class="listing_pic" src="{{url_for('static', filename='images/' + listing.listingid|string + '.jpg')}}">
+                          </div>
+                        </div>
+                        <div class="listing_details">
+                          <div class="row">
+                            <div class="col-lg-12 col-12 listing_name">
+                              {{ listing.name }}
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12 col-12 listing_neighbourhood">
+                              {{ listing.neighbourhood  }}
+                            </div>
+                            <!--
+                            <div class="col-lg-4 col-4 listing_city">
+                              {{ listing.city  }}
+                            </div>
+                            -->
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-6 col-6 listing_rating">
+                              &#9733 {{ listing.rating|int / 20 }}
+                            </div>
+                            <div class="col-lg-6 col-6 listing_price">
+                              $ {{ listing.price }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                {% endfor %}
+              </div>
+
+
+
+
+
+            </form>
+
+
+            
+
+          </div>
+        </div>
+      </div>
+
+
+    <!--</div>-->
+  </div>
+</header>
+
+
+<script src="{{url_for('.static', filename='d3.v4.min.js')}}"></script>
+<script src="{{url_for('.static', filename='set_dropdown_options.js')}}"></script>
+
+
+
+<!--
+<section class="listing_details" id="listing_details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
+        Test
+      </div>
+    </div>
+  </div>
+</section>
+-->
