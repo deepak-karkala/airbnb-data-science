@@ -66,6 +66,18 @@ def create_app(test_config=None):
                     listings = db.execute(
                         'SELECT listingid, city, name, neighbourhood, price, rating, score FROM listings ORDER BY score DESC'
                     ).fetchall()
+                elif filter_product_category == "Listing Vibe: Family":
+                    listings = db.execute(
+                        'SELECT listingid, city, name, neighbourhood, price, rating, score, vibe FROM listings l WHERE l.vibe = 1'
+                    ).fetchall()
+                elif filter_product_category == "Listing Vibe: Friends":
+                    listings = db.execute(
+                        'SELECT listingid, city, name, neighbourhood, price, rating, score, vibe FROM listings l WHERE l.vibe = 0'
+                    ).fetchall()
+                elif filter_product_category == "Listing Vibe: Solo,Business":
+                    listings = db.execute(
+                        'SELECT listingid, city, name, neighbourhood, price, rating, score, vibe FROM listings l WHERE l.vibe = 2'
+                    ).fetchall()
                 else:
                     filter_product_category = "Image aesthetic: High to Low"
                     listings = db.execute(
@@ -102,3 +114,11 @@ def create_app(test_config=None):
     #Bootstrap(app)
 
     return app
+
+# if this is the main thread of execution first load the model and
+# then start the server
+if __name__ == "__main__":
+    print(("* Flask starting server..."
+        "please wait until server has fully started"))
+    app = create_app()
+    app.run(host='0.0.0.0', port=5002)
