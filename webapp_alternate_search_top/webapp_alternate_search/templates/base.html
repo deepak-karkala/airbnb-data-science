@@ -3,12 +3,16 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='select2.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='fontawesome.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='brands.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='solid.min.css') }}">
 <script src="{{url_for('.static', filename='jquery.min.js')}}"></script>
 <script src="{{url_for('.static', filename='bootstrap.bundle.min.js')}}"></script>
 <script src="{{url_for('static', filename='select2.js')}}"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+<link href="/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet" type="text/css">
 
 
 <!--
@@ -39,12 +43,11 @@
     <a class="nav-link" href="http://deepakkarkala.com/">Home</a>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" id="Toggle navigation">
           <i class="fas fa-bars"></i>
-        
     </button>
     <div id="navbarNavDropdown" class="navbar-collapse collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="">About this project</a>
+                <a class="nav-link" href="http://deepakkarkala.com/docs/articles/machine_learning/airbnb_alternate_search/about/index.html">Project-Report</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -194,6 +197,37 @@
 
             
 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row btn-links-row">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="http://deepakkarkala.com/docs/articles/machine_learning/airbnb_alternate_search/about/index.html"><button type="button" class="btn btn-primary btn-sm btn-links" style="padding:10px 2px;">
+                View Project Report
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="https://colab.research.google.com/drive/1zYMSx7GFDmP7f36ElkUPt5ZDzke_NtuK?usp=sharing"><button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/colab.png')}}" style="height: 30px; width:30px; padding:2px;">
+                Run in Google Colab
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <a href="https://github.com/deepak-karkala/airbnb-data-science/tree/master/webapp_alternate_search_top/webapp_alternate_search"><button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/github.png')}}" style="height: 30px; width:30px; padding:2px;">
+                View Source
+              </button></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 mx-auto">
+              <button type="button" class="btn btn-primary btn-sm btn-links">
+                <img src="{{url_for('static', filename='misc_images/docker.png')}}" style="height: 30px; width:30px; padding:2px;">
+                dkarkala01/airbnb-search
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ body {
 #mainNav {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black;
+  background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
@@ -48,7 +48,7 @@ body {
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: black;
+  background-color: transparent;
 }
 
 
@@ -58,7 +58,7 @@ body {
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     border-bottom: none;
-    background: black;
+    background: transparent;
   }
   #mainNav.navbar-shrink {
     background: black;
@@ -95,7 +95,7 @@ body {
 .masthead .intro-body {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .masthead .intro-body .brand-heading {
@@ -206,7 +206,7 @@ body {
 */
 .listing_form_row {
 	text-align: left;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .listing_form_bottom_row {
@@ -216,8 +216,8 @@ body {
 .listing_form {
 	background-color: #ededed;
 	color: black;
-  padding: 15px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .model_output_row {
@@ -252,7 +252,7 @@ p {
   margin: 3px;
   cursor: pointer;
   text-align: center;
-  font-size: 0.80rem;
+  font-size: 0.90rem;
   border: 1px solid #000000;
   border-radius: 16px;
   background: white; /*#f1e0d6;*/
@@ -327,4 +327,13 @@ p {
 .listing_price {
   text-align: right;
   font-weight: bold;
+}
+
+.btn-links {
+  background-color: #dedede;
+  border-radius: 12px;
+  color: black;
+  border-color: black;
+  font-size: 0.75rem;
+  font-weight: 500;
 }

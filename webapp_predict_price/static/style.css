@@ -12,7 +12,7 @@ body {
 #mainNav {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black;
+  background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
@@ -47,7 +47,7 @@ body {
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: black;
+  background-color: transparent;
 }
 
 
@@ -57,10 +57,10 @@ body {
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     border-bottom: none;
-    background: black;
+    background: transparent;
   }
   #mainNav.navbar-shrink {
-    background: black;
+    background: transparent;
   }
   #mainNav .nav-link.active {
     outline: none;
@@ -81,7 +81,7 @@ body {
   */
   text-align: center;
   color: black;
-  background: url("background.jpg") no-repeat center center scroll;
+  background: black; /*url("background.jpg") no-repeat center center scroll;*/
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -94,7 +94,7 @@ body {
 .masthead .intro-body {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .masthead .intro-body .brand-heading {
@@ -118,7 +118,7 @@ body {
   .masthead {
     height: 100vh; /*150%;*/
     padding: 0;
-    padding-top: 0vh;
+    padding-top: 10px;
   }
   .masthead .intro-body .brand-heading {
     font-size: 1.5rem;
@@ -246,4 +246,17 @@ p {
 
 .filled_value {
 	background-color: #FF5A60;
+}
+
+.btn-links {
+  background-color: #dedede;
+  border-radius: 12px;
+  color: black;
+  border-color: black;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.btn-links-row {
+  margin-top: 10px;
 }

@@ -4,6 +4,7 @@ import webapp_predict_price
 
 import pickle
 from flask import Flask
+from flask_restful import reqparse
 import flask
 import sklearn
 import joblib
@@ -208,6 +209,118 @@ def create_app(test_config=None):
                                          result=prediction,
                                          )
             """
+    # Predict and return JSON data
+    @app.route("/predict", methods=["POST"])
+    def predict():
+        
+
+        # initialize the data dictionary that will be returned from the view
+        data = {"success": False}
+
+        # ensure an image was properly uploaded to our endpoint
+        if flask.request.method == "POST":
+            data["predictions"] = []
+
+            """
+            country = flask.request.form.get('country')
+            if country == "":
+                country = "United States"
+            city = flask.request.form.get('city')
+            if city == "":
+                city = "New York"
+            neighbourhood = flask.request.form.get('neighbourhood')
+            if neighbourhood == "":
+                neighbourhood = "Downtown Brooklyn"
+            roomtype = flask.request.form.get('roomtype')
+            if roomtype == "":
+                roomtype = "Entire home/apt"
+            """
+
+            parser = reqparse.RequestParser()
+            parser.add_argument('country', type=str, help='Country')
+            parser.add_argument('city', type=str, help='City')
+            parser.add_argument('neighbourhood', type=str, help='Neighbourhood')
+            parser.add_argument('roomtype', type=str, help='Room type')
+            args = parser.parse_args()
+            #args = flask.request.args.to_dict()
+            
+            # Pass default values if not passed
+            if pd.isnull(args["country"]):
+                args["country"] = "United States"
+            if pd.isnull(args["city"]):
+                args["city"] = "New York"
+            if pd.isnull(args["neighbourhood"]):
+                args["neighbourhood"] = "Downtown Brooklyn"
+            if pd.isnull(args["roomtype"]):
+                args["roomtype"] = "Entire home/apt"
+
+            country = args["country"].replace("_"," ")
+            city = args["city"].replace("_"," ")
+            neighbourhood = args["neighbourhood"].replace("_"," ")
+            roomtype = args["roomtype"].replace("_"," ")
+
+            bedtype = "Real Bed"
+            propertytype = "House"
+            cancellationpolicy = "moderate"
+            hostresponsetime = "within a day"
+
+            accommodates = 2
+            num_bedrooms = 1
+            num_beds = 1
+            min_nights = 1
+            availability_30 = 15
+            availability_60 = 12
+            availability_90 = 12
+            availability_365 = 150
+            num_reviews = 50
+            reviews_per_month = 0.22
+            review_scores_rating = 80
+            review_scores_accuracy = 8
+            review_scores_cleanliness = 8
+            review_scores_checkin = 8
+            review_scores_communication = 8
+            review_scores_location = 8
+            review_scores_value = 8
+            host_since = 100
+            host_response_rate = 90
+            host_num_listings = 1
+
+            # Create input to Model from form data
+            df_input = pd.DataFrame([[country, city, neighbourhood, propertytype, roomtype, bedtype,
+                                cancellationpolicy, hostresponsetime, accommodates, num_bedrooms, num_beds,
+                                min_nights, availability_30, availability_60, availability_90, availability_365,
+                                num_reviews, reviews_per_month, review_scores_rating, review_scores_accuracy, 
+                                review_scores_cleanliness, review_scores_checkin, review_scores_communication,
+                                review_scores_location, review_scores_value, host_response_rate,
+                                ]],
+                               columns=['Country', 'City', 'Neighbourhood Cleansed', 'Property Type',
+                                       'Room Type', 'Bed Type', 'Cancellation Policy', 'Host Response Time',
+                                       'Accommodates', 'Bedrooms', 'Beds', 'Minimum Nights', 'Availability 30',
+                                       'Availability 60', 'Availability 90', 'Availability 365',
+                                       'Number of Reviews', 'Reviews per Month', 'Review Scores Rating',
+                                       'Review Scores Accuracy', 'Review Scores Cleanliness',
+                                       'Review Scores Checkin', 'Review Scores Communication',
+                                       'Review Scores Location', 'Review Scores Value', 'Host Response Rate'],
+                               dtype=float)
+
+            # Inference: Get prediction from Model
+            prediction_price = model.predict(df_input)[0]
+            prediction_price = round(prediction_price)
+
+            features = {}
+            features["country"] = country
+            features["city"] = city
+            features["neighbourhood"] = neighbourhood
+            features["roomtype"] = roomtype
+
+            # Add prediction results to JSON data
+            r = {"prediction_price": prediction_price, "features": features}
+            data["predictions"].append(r)
+            # indicate that the request was a success
+            data["success"] = True
+
+        # return the data dictionary as a JSON response
+        return flask.jsonify(data)
 
     #Bootstrap(app)
 
@@ -220,4 +333,4 @@ if __name__ == "__main__":
     print(("* Loading Scikit-learn model and Flask starting server..."
         "please wait until server has fully started"))
     app = create_app()
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5000)

@@ -51,7 +51,7 @@ def create_app(test_config=None):
 
             if ("filter_product_button" in flask.request.form):
                 filter_product_category = flask.request.form["filter_product_button"]
-                print(filter_product_category)
+                #print(filter_product_category)
 
                 if filter_product_category == "Random":
                     listings = db.execute(
