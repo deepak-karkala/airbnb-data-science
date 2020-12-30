@@ -115,7 +115,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/image_quality_blockdiagram.png">
+      <img src="images/image_quality_blockdiagram.png" width="500">
     </div>
   </div>
 
@@ -124,36 +124,16 @@ The project involved coming up with alternate search rankings based on Listing V
       <p>
         The Deep Learning Model used to assess image quality is <a href="https://ai.googleblog.com/2017/12/introducing-nima-neural-image-assessment.html">Google's Neural image assessment model</a>. It is based on Convolutional Neural Networks (CNN). <a href="https://github.com/idealo/image-quality-assessment">This</a> implementation of the model was used to assign scores to photos of listings.
       </p>
+        <p>
+         The following two pictures illustrate how search by Image Aesthetics works. In the first picture, the images are sorted in descending order of Aethetics Score such that the first listing is the one with the best aesthetic whereas in the second picture, the initial images are ones with the worst aesthetics.
+        </p>
     </div>
   </div>
 
-
-  <div class="row img_block img_block_abtesting">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-12 image_header">Images with Best Aesthetics</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12">
-              <img src="images/image_quality_hightolow.png">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-12 image_header">Images with Poor Aesthetics</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12">
-              <img src="images/image_quality_lowtohigh.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/image_quality_hightolow.png" width="400" />
+  <img src="images/image_quality_lowtohigh.png" width="400" /> 
+</p>
 
   
   <div class="row">
@@ -209,7 +189,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/listings_vibe_blockdiagram.png">
+      <img src="images/listings_vibe_blockdiagram.png" width="500">
     </div>
   </div>
 
@@ -238,7 +218,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/nlp_pipeline.png">
+      <img src="images/nlp_pipeline.png" width="600">
     </div>
   </div>
 
@@ -277,7 +257,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/listing_types.png">
+      <img src="images/listing_types.png" width="600">
     </div>
   </div>
 
@@ -303,7 +283,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto doc_gif">
-      <img src="images/topics.gif">
+      <img src="images/topics.gif" width="600">
     </div>
   </div>
 
@@ -322,7 +302,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
-      <img class="doc_gif" src="images/vibe_search.gif">
+      <img class="doc_gif" src="images/vibe_search.gif" width="600">
     </div>
   </div>
 
@@ -377,7 +357,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/ab_testing.png">
+      <img src="images/ab_testing.png" width="600">
     </div>
   </div>
 
@@ -442,38 +422,17 @@ The project involved coming up with alternate search rankings based on Listing V
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
       <p>
-        Once the goals, metrics are defined and hypothesis formulated, the next step is to add the new feature which needs to be tested. This version of the webpage is referred to as the <b>Variation</b> and the existing version is referred to as the <b>Control</b>. The following figure shows one possible option for <em>Control</em> and the <em>Variation</em> versions of the webpage for this project.
+        Once the goals, metrics are defined and hypothesis formulated, the next step is to add the new feature which needs to be tested. This version of the webpage is referred to as the <b>Variation</b> and the existing version is referred to as the <b>Control</b>. The following figure shows one possible option for <em>Control</em> (first image) and the <em>Variation</em> (second image) versions of the webpage for this project.
       </p>
     </div>
   </div>
 
-  <div class="row img_block img_block_abtesting">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-12 image_header">Control (Existing version)</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12 doc_image_block">
-              <img src="images/control.png">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-12 image_header">Variation (Version with new features)</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12 doc_image_block">
-              <img src="images/variation.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/control.png" width="400" />
+  <img src="images/variation.png" width="400" /> 
+</p>
 
+  
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
       <h5 class="sub-title">Step 4: Run A/B (Split) Testing</h5>
@@ -540,7 +499,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/pdf_zscore_pvalue.gif">
+      <img src="images/pdf_zscore_pvalue.gif" width="400">
     </div>
   </div>
 
@@ -625,37 +584,16 @@ pvalue = chi2.sf(D, df=1)
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
       <p>
-        The following figures show the distribution of test statistics, Z-test score for Booking Time Hypothesis, Distance for Conversion Rate Hypothesis and the corresponding p-values.
+        The following figures show the distribution of test statistics, Z-test score for Booking Time Hypothesis, Distance for Conversion Rate Hypothesis and the corresponding p-values. The first image refers to Hypothesis-1: Time for Booking and the second image refers to Hypothesis-2: Conversion Rate.
       </p>
     </div>
   </div>
 
-  <div class="row img_block img_block_abtesting">
-    <div class="col-lg-10 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12 image_header">Hypothesis 1: Time For Booking</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12 doc_image_block">
-              <img src="images/hypothesis1_pdf_pvalue.jpg">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12 image_header">Hypothesis 2: Conversion Rate</div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12 doc_image_block">
-              <img src="images/hypothesis2_pdf_pvalue.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/hypothesis1_pdf_pvalue.jpg" width="400" />
+  <img src="images/hypothesis2_pdf_pvalue.jpg" width="400" /> 
+</p>
+
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -711,7 +649,7 @@ pvalue = chi2.sf(D, df=1)
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/cicd_pipeline_search.png">
+      <img src="images/cicd_pipeline_search.png" width="600">
     </div>
   </div>
 
