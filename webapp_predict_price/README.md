@@ -541,9 +541,9 @@ train_sizes, train_scores, valid_scores, fit_times, score_times = learning_curve
   </div>
 
 <p float="left">
-  <img src="images/exploratory/models/linreg_lc.png" width="250" />
-  <img src="images/exploratory/models/linreg_fittime.png" width="250" /> 
-  <img src="images/exploratory/models/linreg_perf.png" width="250" />
+  <img src="images/exploratory/models/linreg_lc.png" width="300" />
+  <img src="images/exploratory/models/linreg_fittime.png" width="300" /> 
+  <img src="images/exploratory/models/linreg_perf.png" width="300" />
 </p>
 
 
@@ -656,9 +656,9 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
   </div>
 
 <p float="left">
-  <img src="images/exploratory/hparams/dectree_maxdepth.png" width="250" />
-  <img src="images/exploratory/hparams/dectree_maxfeatures.png" width="250" /> 
-  <img src="images/exploratory/hparams/dectree_maxleafnodes.png" width="250" />
+  <img src="images/exploratory/hparams/dectree_maxdepth.png" width="300" />
+  <img src="images/exploratory/hparams/dectree_maxfeatures.png" width="300" /> 
+  <img src="images/exploratory/hparams/dectree_maxleafnodes.png" width="300" />
 </p>
 
   <div class="row">
@@ -668,9 +668,9 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
   </div>
 
 <p float="left">
-  <img src="images/exploratory/models/dectree_lc.png" width="250" />
-  <img src="images/exploratory/models/dectree_fittime.png" width="250" /> 
-  <img src="images/exploratory/models/dectree_perf.png" width="250" />
+  <img src="images/exploratory/models/dectree_lc.png" width="300" />
+  <img src="images/exploratory/models/dectree_fittime.png" width="300" /> 
+  <img src="images/exploratory/models/dectree_perf.png" width="300" />
 </p>
 
 
@@ -685,7 +685,7 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
 
   <div class="row">
     <div class="col-lg-6 col-md-8 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/exploratory/model_comparison.png" width="300">
+      <img src="images/exploratory/model_comparison.png" width="500">
     </div>
   </div>
 
@@ -859,7 +859,7 @@ def predict():
   </div>
   <div class="row image_row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-10 mx-auto">
-      <img  src="images/restapi_prediction.png" width="600">
+      <img  src="images/restapi_prediction.png" width="800">
     </div>
   </div>
 
