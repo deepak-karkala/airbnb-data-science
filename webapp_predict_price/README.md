@@ -54,7 +54,7 @@ The project aimed at predicting the price of an Airbnb listing given a number of
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/predict_overview.png">
+      <img src="images/predict_overview.png" width="500">
     </div>
   </div>
 
@@ -156,27 +156,13 @@ The project aimed at predicting the price of an Airbnb listing given a number of
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row img_block">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto img_container">
-          <img src="images/exploratory/histograms/city.png">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-          <div class="row">
-            <div class="col-lg-12 col-12 img_container">
-              <img src="images/exploratory/histograms/country.png">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12 img_container">
-              <img src="images/exploratory/histograms/roomtype.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <p float="left">
+      <img src="images/exploratory/histograms/city.png" width="300" />
+      <img src="images/exploratory/histograms/country.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/histograms/roomtype.png" width="400" />
+  </p>
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -185,29 +171,16 @@ The project aimed at predicting the price of an Airbnb listing given a number of
       </p>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row img_block">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto img_container">
-          <img src="images/exploratory/correlation_with_price/city_price.png">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-          <div class="row">
-            <div class="col-lg-12 col-12 img_container">
-              <img src="images/exploratory/correlation_with_price/country_price.png">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-12 img_container">
-              <img src="images/exploratory/correlation_with_price/roomtype_price.png">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/city_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/country_price.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/roomtype_price.png" width="400" />
+  </p>
+  
+  
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
       <p class="p_no_top_gap">
@@ -239,48 +212,26 @@ The project aimed at predicting the price of an Airbnb listing given a number of
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-sm-10 col-11 mx-auto">
-      <div class="row img_block">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/accommodates_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/bedrooms_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/beds_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/review_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/hostresponserate_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/family_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/tv_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/ac_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/fireplace_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/superhost_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/wifi_price.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-6 mx-auto">
-          <img class="correlation_with_price_pic" src="images/exploratory/correlation_with_price/24hourcheckin_price.png">
-        </div>
-      </div>
-    </div>
-  </div>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/accommodates_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/beds_price.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/review_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/hostresponserate_price.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/family_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/tv_price.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/ac_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/superhost_price.png" width="300" /> 
+  </p>
+  <p float="left">
+      <img src="images/exploratory/correlation_with_price/wifi_price.png" width="300" />
+      <img src="images/exploratory/correlation_with_price/24hourcheckin_price.png" width="300" /> 
+  </p>
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -306,7 +257,7 @@ The project aimed at predicting the price of an Airbnb listing given a number of
 
   <div class="row">
     <div class="col-lg-5 col-md-8 col-sm-10 col-11 mx-auto image_top">
-      <img src="images/predict_datapipeline.png">
+      <img src="images/predict_datapipeline.png" width="400">
     </div>
   </div>
 
@@ -546,7 +497,7 @@ save_model(model=preprocessing_pipeline, save_path="preprocessing_pipeline.pkl")
 
   <div class="row">
     <div class="col-lg-6 col-md-8 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/exploratory/models/linreg_featurescore.png">
+      <img src="images/exploratory/models/linreg_featurescore.png" width="400">
     </div>
   </div>
 
@@ -589,21 +540,12 @@ train_sizes, train_scores, valid_scores, fit_times, score_times = learning_curve
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img class="row_image" src="images/exploratory/models/linreg_lc.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img class="row_image" src="images/exploratory/models/linreg_fittime.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img  class="row_image" src="images/exploratory/models/linreg_perf.png">
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/exploratory/models/linreg_lc.png" width="250" />
+  <img src="images/exploratory/models/linreg_fittime.png" width="250" /> 
+  <img src="images/exploratory/models/linreg_perf.png" width="250" />
+</p>
+
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -635,7 +577,7 @@ train_sizes, train_scores, valid_scores, fit_times, score_times = learning_curve
 
   <div class="row">
     <div class="col-lg-4 col-md-8 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/exploratory/models/dectree_featurescore.png">
+      <img src="images/exploratory/models/dectree_featurescore.png" width="300">
     </div>
   </div>
 
@@ -713,22 +655,11 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row img_block">
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/hparams/dectree_maxdepth.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/hparams/dectree_maxfeatures.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/hparams/dectree_maxleafnodes.png">
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/exploratory/hparams/dectree_maxdepth.png" width="250" />
+  <img src="images/exploratory/hparams/dectree_maxfeatures.png" width="250" /> 
+  <img src="images/exploratory/hparams/dectree_maxleafnodes.png" width="250" />
+</p>
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -736,21 +667,12 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
-      <div class="row img_block">
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/models/dectree_lc.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/models/dectree_fittime.png">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-10 mx-auto image_top">
-          <img src="images/exploratory/models/dectree_perf.png">
-        </div>
-      </div>
-    </div>
-  </div>
+<p float="left">
+  <img src="images/exploratory/models/dectree_lc.png" width="250" />
+  <img src="images/exploratory/models/dectree_fittime.png" width="250" /> 
+  <img src="images/exploratory/models/dectree_perf.png" width="250" />
+</p>
+
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-12 mx-auto">
@@ -763,7 +685,7 @@ search = RandomizedSearchCV(estimator=model, param_distributions=param_distribut
 
   <div class="row">
     <div class="col-lg-6 col-md-8 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/exploratory/model_comparison.png">
+      <img src="images/exploratory/model_comparison.png" width="300">
     </div>
   </div>
 
@@ -937,7 +859,7 @@ def predict():
   </div>
   <div class="row image_row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-10 mx-auto">
-      <img  src="images/restapi_prediction.png">
+      <img  src="images/restapi_prediction.png" width="600">
     </div>
   </div>
 
@@ -950,7 +872,7 @@ def predict():
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-10 mx-auto image_top">
-      <img src="images/airbnb_predict_production.png">
+      <img src="images/airbnb_predict_production.png" width="600">
     </div>
   </div>
 
