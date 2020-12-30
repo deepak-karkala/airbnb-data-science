@@ -131,8 +131,8 @@ The project involved coming up with alternate search rankings based on Listing V
   </div>
 
 <p float="left">
-  <img src="images/image_quality_hightolow.png" width="400" />
-  <img src="images/image_quality_lowtohigh.png" width="400" /> 
+  <img src="images/image_quality_hightolow.png" width="500" />
+  <img src="images/image_quality_lowtohigh.png" width="500" /> 
 </p>
 
   
@@ -218,7 +218,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/nlp_pipeline.png" width="600">
+      <img src="images/nlp_pipeline.png" width="700">
     </div>
   </div>
 
@@ -428,8 +428,8 @@ The project involved coming up with alternate search rankings based on Listing V
   </div>
 
 <p float="left">
-  <img src="images/control.png" width="400" />
-  <img src="images/variation.png" width="400" /> 
+  <img src="images/control.png" width="500" />
+  <img src="images/variation.png" width="500" /> 
 </p>
 
   
@@ -485,7 +485,6 @@ The project involved coming up with alternate search rankings based on Listing V
           </tr>
         </tbody>
       </table>
-        
     </div>
   </div>
 
@@ -499,7 +498,7 @@ The project involved coming up with alternate search rankings based on Listing V
 
   <div class="row">
     <div class="col-lg-6 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/pdf_zscore_pvalue.gif" width="400">
+      <img src="images/pdf_zscore_pvalue.gif" width="500">
     </div>
   </div>
 
@@ -649,7 +648,7 @@ pvalue = chi2.sf(D, df=1)
 
   <div class="row">
     <div class="col-lg-8 col-md-10 col-sm-10 col-11 mx-auto doc_image">
-      <img src="images/cicd_pipeline_search.png" width="600">
+      <img src="images/cicd_pipeline_search.png" width="800">
     </div>
   </div>
 
